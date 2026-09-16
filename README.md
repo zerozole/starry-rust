@@ -54,19 +54,3 @@ jacobian = m.flux_jacobian(xo=.2, yo=.4, ro=.1)
 For source-tree use, add `python/` to `PYTHONPATH`; the loader finds the release
 library. `STARRY_RUST_LIBRARY` selects an explicit native library.
 
-## Documentation and verification
-
-- [Numerical API and executable examples](NUMERICAL_API.md)
-- [Numerical limits and source differences](NUMERICAL_LIMITS.md)
-- [Validation evidence and commands](VALIDATION.md)
-- [Completion checklist](COMPLETION_CHECKLIST.md)
-- [Current status](PORT_STATUS.md)
-
-`python validation/record_run.py` runs formatting, strict Clippy, Rust/Python
-tests, reference comparisons, source audits and selected original upstream
-tests. Reference compilation needs the separate `../starry-upstream` checkout
-and a C++ compiler; prebuilt local reference executables can be reused.
-
-Upstream's MIT license is retained in [LICENSE](LICENSE). The separately
-vendored exoplanet validation reference retains its own license under
-`validation/`. No source-reference Python is used by the installed runtime.
