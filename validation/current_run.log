@@ -1,0 +1,1449 @@
+Running: cargo fmt --all -- --check
+Running: cargo clippy --offline --all-targets -- -D warnings
+    Checking starry-rust v0.1.0 (D:\Games\starry-rust)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 1.41s
+Running: cargo test --offline
+   Compiling starry-rust v0.1.0 (D:\Games\starry-rust)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 3.55s
+     Running unittests src\lib.rs (target\debug\deps\starry_rust-36bb99bcc4200d18.exe)
+
+running 1 test
+test oblate_derivatives::tests::zero_gravity_has_zero_planck_derivative_limit ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src\bin\probe.rs (target\debug\deps\probe-22f304d2d5e22bec.exe)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\core.rs (target\debug\deps\core-a890585f7ec70e0e.exe)
+
+running 13 tests
+test elliptic_limits ... ok
+test upstream_intensity_cases ... ok
+test polynomial_derivatives_at_axes ... ok
+test limb_darkening_normalization ... ok
+test centered_dipole_occultation ... ok
+test invalid_inputs_are_errors ... ok
+test upstream_rotation_convention ... ok
+test low_degree_basis_and_normalization ... ok
+test intensity_gradients ... ok
+test geometric_gradients_match_flux_differences ... ok
+test uniform_occultations_and_contact_limits ... ok
+test rotations_preserve_field_and_power ... ok
+test analytic_matches_independent_integrator ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.61s
+
+     Running tests\differentiation.rs (target\debug\deps\differentiation-0926795677af2ec6.exe)
+
+running 1 test
+test all_emitted_derivatives ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.04s
+
+     Running tests\domain_stress.rs (target\debug\deps\domain_stress-c9710cdd839398a9.exe)
+
+running 3 tests
+test degree32_velocity_product_matches_direct_surface ... ok
+test upper_degree_filters_and_extreme_views ... ok
+test degree32_mixed_harmonics_ring_vs_surface ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 16.00s
+
+     Running tests\doppler_inverse.rs (target\debug\deps\doppler_inverse-74f90d48f0c41846.exe)
+
+running 4 tests
+test wavelength_grid_and_spline ... ok
+test unrestricted_spectral_map_and_adjoint ... ok
+test designs_and_normalized_jacobian ... ok
+test recover_surface_and_rest_spectrum ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\exposure.rs (target\debug\deps\exposure-8b03d57de76a67d9.exe)
+
+running 1 test
+test exposure_quadrature_moments ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests\extended.rs (target\debug\deps\extended-043db7bf23f7ff2c.exe)
+
+running 9 tests
+test orbit_equation_velocity_and_mass_conversion ... ok
+test gaussian_inference_closed_form ... ok
+test lambert_phase_curve_and_inverse_square ... ok
+test union_occultation_does_not_double_count ... ok
+test projection_and_rv ... ok
+test system_transit_eclipse_and_barycenter ... ok
+test oblate_flux_normalization_and_gravity_profile ... ok
+test reflected_occultation_limits_and_symmetry ... ok
+test spots_images_and_doppler ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.06s
+
+     Running tests\harmonics.rs (target\debug\deps\harmonics-2b4450565e982d26.exe)
+
+running 2 tests
+test tangent_derivatives_including_poles ... ok
+test recurrence_and_rotation_projection ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.12s
+
+     Running tests\high_degree_filters.rs (target\debug\deps\high_degree_filters-735ebe340817b1bc.exe)
+
+running 1 test
+test projected_limb_product_and_chord_quadrature ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.24s
+
+     Running tests\oblate_system.rs (target\debug\deps\oblate_system-7be89fd4a261bd99.exe)
+
+running 3 tests
+test eclipse_uses_elliptical_primary_silhouette ... ok
+test oblate_primary_transit_matches_map ... ok
+test conic_moments_match_circles_and_ellipses ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.02s
+
+     Running tests\orbit_derivatives.rs (target\debug\deps\orbit_derivatives-75d5d2414f5351d4.exe)
+
+running 1 test
+test orbital_jacobian_hessian_and_time_identities ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests\pixels.rs (target\debug\deps\pixels-d6a91117e5c95116.exe)
+
+running 1 test
+test surface_reconstruction_and_derivatives ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.03s
+
+     Running tests\rings.rs (target\debug\deps\rings-ad054915b1a5bf44.exe)
+
+running 4 tests
+test degree_twenty_convergence_and_azimuthal_symmetry ... ok
+test harmonic_circle_union ... ok
+test stable_high_degree_geometry_derivative ... ok
+test harmonic_ring_integration_matches_green_solver ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 5.16s
+
+     Running tests\specialized_stability.rs (target\debug\deps\specialized_stability-3e6c9e21ae96a602.exe)
+
+running 3 tests
+test direct_surface_matches_analytic_overlap_and_phase ... ok
+test degree_32_oblate_spherical_limit_matches_ring_integral ... ok
+test high_degree_specialized_paths_reproduce_low_degree_models ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 14.29s
+
+   Doc-tests starry_rust
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+Running: cargo build --release --offline
+   Compiling starry-rust v0.1.0 (D:\Games\starry-rust)
+    Finished `release` profile [optimized] target(s) in 42.58s
+Running: C:\Users\ATAL\miniforge3\python.exe validation/compare.py
+Basis comparisons complete
+Flux comparisons complete
+{
+  "upstream_commit": "b72dff08588532f96bd072f2f1005e227d8e4ed8",
+  "source_and_binary_sha256": {
+    "src\\autodiff.rs": "48bb7ac289b067ed6c86dca8c9445f37587833f75a0f04f92b6acdea968c9b64",
+    "src\\basis.rs": "c3e7de628e11c1223d1ab1286410d0785a2c4af37d2a87eb4c5ced0f4e31145d",
+    "src\\bin\\probe.rs": "a34925925f96b9ff524e5e786d78653961f902075daa432ef2a4b6778d28d4fe",
+    "src\\conic.rs": "b47037658fab9ba09a1d2f95f8cc081ba8b55df20b206135ed26f35b783522e8",
+    "src\\differentiation.rs": "4b11505309f4182b5c43dda80ebaff96943fbaaf1141a669f40b244cade6eb1c",
+    "src\\doppler.rs": "0ad217514c5ceb4624658b558a272492df577672517858e4f6b87985c14614c2",
+    "src\\doppler_derivatives.rs": "53e51550018d2161e1769cf7ccd8d54c1f458746335c35487247b7a3d583addc",
+    "src\\elliptic.rs": "871b1ab3ba630c965f38d2fb9a04e12f52641b1dcd9f20366c9477d7de8c4bdc",
+    "src\\ffi.rs": "e9b20f4bc5c4291858a54296549bf4ae17865fba3296e4220276889e82c3d4aa",
+    "src\\gradients.rs": "ea2866507715d6d21399f243f5b14fa2a777408b8a998737edd0c2f399089926",
+    "src\\imaging.rs": "2a99920a60b27334b37462c9dbea0715a9c4017683c2c4faac5a7b80282940f3",
+    "src\\inference.rs": "5bf5370a12f47d65939758b560b85490212dc5981b3ca593a459ad47bbd82037",
+    "src\\lib.rs": "a15de5258c2bed7c35cebd61827f6faa8812c9383fb1ca3117578d48f28b567d",
+    "src\\map.rs": "e66fffa79bd9abd19eb1c88c6f9024996dc260fb91619d78ed1b074ccd4c304b",
+    "src\\matrix.rs": "20b8d9053ea54f9f22cbf74ae2c2401bc6041804bb7a7a61edd38b7dfb517e14",
+    "src\\oblate.rs": "574079d49b86b752c3d854b5fa969f97283bd4250785c2fa63c0dbb5e1fd7359",
+    "src\\oblate_derivatives.rs": "b38457aeab565097efc471567e19d462ce5cf807d34b390d6894b259e7766a35",
+    "src\\occultation.rs": "d30d315220e1bcf5c26ca4e38c80278be706244042f432846d7dfe7de27e7ccc",
+    "src\\orbit.rs": "bb3ef78d37a8103c9458384d9d5a1f28df955363fd6cc85230405007384b9562",
+    "src\\oren_coefficients.rs": "f9c126bfb2ba2e29e003a687daf8d48dd620e016c2ec159bf5e3bb7f9f40a185",
+    "src\\pixels.rs": "6c136e134a553f91b8453a3bee9ab6060becf0714c249f8dae05a3f8f8a0be54",
+    "src\\polynomial_roots.rs": "098934cf0c75c101e06b4e9ee1921364f80faa00d3b9b04e9b3a45306e58efdd",
+    "src\\quadrature.rs": "3b8f818147b6371b44783fd91a2704ba7b0f07467e103b5056770f8e8e115977",
+    "src\\reflected.rs": "ce6f4f59c2ce62c8e9383b7e51f49525e9006139d973c56e0157dc0e67aecd28",
+    "src\\reflected_derivatives.rs": "2ca9228425a37e9f552310cb7a2868a0a8a7f23490266260f0dd8aae6533be96",
+    "src\\rings.rs": "9ac6e68192919df9e95551ade5146b1c6af751afba7ecf062abc349d3eef154d",
+    "src\\rotation.rs": "195a5f6dcabf5b8cd4274ab6abd4dfa39390689a3455c9afbc674cba091b8813",
+    "src\\rv.rs": "d743178519e0e5d6a687b5026ca6b89fd3c08c6e15c85ba61d2da0a8712a9865",
+    "src\\rv_derivatives.rs": "5f67c901de540d97c7d1fb92e9e3af89d9eab79136ebef9b1a852d126904d88b",
+    "src\\session.rs": "1db73d96569b073e356291bcd31f46f6ec5f74757cdebf0161c2db937f473d9e",
+    "src\\solver.rs": "aca2a956dcaa382a0f6058453e7534897da2f4535ef06b3899563ebc787be123",
+    "src\\source_orbits.rs": "38cf4c0bd6c84b4252ec0ccd497e47b2417d48b5514c0910f76d43be5ba9b671",
+    "src\\specialized_jacobian.rs": "488c3b9e166d8ac64ee53c73523ee750d948abeed3fe4360bf44461b890b2357",
+    "src\\surface.rs": "73bba455c9fb4c8d5a2ca3b85e15299ab80f9e54cd1899238fd13091fa6facbb",
+    "src\\system.rs": "2434b06bd0ba3c2e205f9cfb04a98299385849de0660e2ee11c6ac6988e8ea9d",
+    "src\\system_derivatives.rs": "6cc5b13a7466a375be0c42aa5a5f407adf75100063e295c420641a2b2cdc0a9a",
+    "src\\system_surface.rs": "2a58347631955620db6015e70682a89891e698f7c0ef78ef67e3accdb174a55b",
+    "tests\\core.rs": "65e8bb7bd48bbcd3699971ccb316d8f01eb560cac903744f1d0259dea51a7983",
+    "tests\\differentiation.rs": "7d45394ef7a9ecdf2f5448729076a49439f9f22647c599db074d37f9ad10d240",
+    "tests\\domain_stress.rs": "26c31f126ba771ce1f376f2a5cfe5903da647bc2944431a664d9f2aac78c2fa0",
+    "tests\\doppler_inverse.rs": "8ad467195d3572a5201261d303dae84f5857649771414e5fc24e972f8bf69b69",
+    "tests\\exposure.rs": "5d275384d3602fbe89cfbcf4b72c6bb6f6b8827f31eb30d3f2e127cfa5e4ffda",
+    "tests\\extended.rs": "fec54c0a8cea31f7a0fdadba23589ae2b1c030f56054ed91e2c2f8e057258ad3",
+    "tests\\harmonics.rs": "c95a1e01794d0b022764b03d9e146b45da0f798beacfb57a8ae0a29f7e7cbaf8",
+    "tests\\high_degree_filters.rs": "b50677f592561b4daec1ed183eacf0e5a2fed45af189d45f45bdeaa17993d302",
+    "tests\\oblate_system.rs": "ee9e093ae1fd8eae13e3cc7e0437826064859a40d7ccc5b826c935564feb7f36",
+    "tests\\orbit_derivatives.rs": "f1004cba7f6d015c5b8d0843bffdb935bcb258c03157c79906ddfcc1ed79b503",
+    "tests\\pixels.rs": "762a9e355839bf9f683f5d3197e1b593c0d471d8ef182697637f56388a9b9c46",
+    "tests\\rings.rs": "039f5a0fe1c1e9454153eeabe884175425b8372df7236f50034eb9f52854af61",
+    "tests\\specialized_stability.rs": "6083208b829c4bb9ce6e90519d26243c8309e1e8db2e50098fa6f9606d2e37de",
+    "python\\_inverse_api.py": "debfa74faed6c43e9ccca60eb09d80950a5835e5a27268d5e999c35f9d55ddfd",
+    "python\\_orbit_api.py": "a99b8d67a00ceb6cacfcb241789dad77754b9181553e24cd5e5c9fadace7c66c",
+    "python\\_starry_api.py": "0de41c892e7bad1821e9acaf9273dd615f9e37bdc06340e507dec46a6b0bafc7",
+    "python\\starry_compat.py": "9639e265afbdd20e0dd6c953f4a143bed90a4784235645a1aac86123007a3972",
+    "python\\starry_rust.py": "0fee14c89648909d3f5daf47889f259a3c424b4936516b8b234e7701cafc3cc2",
+    "python\\test_bilinear.py": "7b1f2342e4851c960f690f2a5f9a761dccec79e679bdd545e50f80997822da21",
+    "python\\test_continuum.py": "b242a46c10b66c87b6170912dab84764baa352b3582ce4c29baa57e46aa47c0e",
+    "python\\test_doppler_derivatives.py": "e5af37aacb868189f6d81ba36bb82d8b9ad469ed90505f178ac3697bbc005391",
+    "python\\test_exposure.py": "b659a689076113c83a0f54b271ec4aaa0da96e9bda50aa7e2bf2f35cabf978c1",
+    "python\\test_extended.py": "e5903e08c68bc5ee3ee977ef81de2ca9cd3300ebeddf564fc7f57997fa236f8e",
+    "python\\test_illumination_derivatives.py": "6ac2a53cd7482399855046c970de9a1931768100934a6682628dcfdf853d051f",
+    "python\\test_imaging_system.py": "4eba41cf3fc6d1495dd89ccb5aa7cdf22cc5e9c6be93b28266c5a2ec66161ed8",
+    "python\\test_interface.py": "2df0ac5d40740acd728d65e0280aa2fbb21d675faff7ac28c7481eb0392ab11b",
+    "python\\test_inverse.py": "8b54ac00341ec179c724042adf3802d3a80785f1cbe314fbae8f8f5be6cf349c",
+    "python\\test_l1.py": "2fadb3071affaf402fb5df6e04e82e21dd62c30b9bc05b2edb2e941ff7c6345d",
+    "python\\test_loading.py": "e34594276c7f7b2c0a69ea1825149057ff78572b008a1b62b27b4a7d9f33ae71",
+    "python\\test_numerical_limits.py": "07985a747181c02ff0bb7b28f99bc073cae26b46f750e3fc46a79c23eca46a1b",
+    "python\\test_oblate_derivatives.py": "5875b1e3fa7a1ee6e5f353195f9dfd5801ec34e12233b71562df8d94801b6e28",
+    "python\\test_orbit_derivatives.py": "2fca9000540a71f7f7bd9ecb485e8a4796a5b8840949c1799ceded6f331029af",
+    "python\\test_pixels_spectral.py": "db333a32af4d3d5daaeea6ede323c2cf1216fcceb93d07a9c5d4224ba09a9d71",
+    "python\\test_rv_derivatives.py": "74a6b70a23b781f0bbf8d217f39aafa5d34cc8a0c8eb30913b489873d823b946",
+    "python\\test_solver_modes.py": "75195528f1b7f4f1359f2abbea41e67d8e40c9b30d6074a6af6536cf27e97c9a",
+    "python\\test_source_system.py": "167f339cfc9defaf1a89ae94beb9ac18ca446a8af8cbd94693dfb756beac8299",
+    "python\\test_specialized_gradients.py": "8a4c8993fa27a572aaace5538825a81919bd2fe6bb6ef9eaddef81ca65f2f540",
+    "python\\test_specialized_jacobian.py": "4e59dc60bd9cec99dac1ae8abb08901f77a88ed5d1eb0148d4d382c43ef53e2a",
+    "python\\test_system_derivatives.py": "e1c030eb827a678a00f5b47f1509db4dda691583110a86d083abed7720660ad9",
+    "python\\test_system_render.py": "dce76c1e62931db077b1e9953d44d9f990cd31b2aad401c3fe1043a910d2a55a",
+    "python\\test_system_surface.py": "0904b90de20fb82a4cf0b65b189396b61ad05f787307548aabf1278f051e5cbf",
+    "Cargo.toml": "2c2dcd3878befdb5f0bb23bb88ed407ac2ecf59bc9fd9ca1fa653baf878cc735",
+    "Cargo.lock": "d0e464a8cad3d7092844578150d4f142460c61f963f24c2f74694173a152fb38",
+    "validation\\oracle.cpp": "df918264e55e34f6babd9d205a731d578ab390d5cd6de5610a221d0ed69dcf3a",
+    "validation\\compare.py": "60fb0f19bab789c591b9a60b780f058ddb8927e6bee3f2570e20604c42de87e0",
+    "validation\\oracle.exe": "7f679855646e0b8f9ab2dbe79524ee23ee70a7fbddeb18c0ea9786d6014ea472",
+    "target\\release\\probe.exe": "396da92b23f10994659a19545fabaac3baa5da1e25b75190c31269bb3c9254d0"
+  },
+  "elapsed_seconds": 11.463137099985033,
+  "cases": 389,
+  "results": {
+    "basis": {
+      "cases": 13,
+      "values": 179361,
+      "max_absolute_error": 1.4551915228366852e-11,
+      "failures": []
+    },
+    "flux": {
+      "cases": 95,
+      "values": 3249,
+      "max_absolute_error": 6.02342672267886e-11,
+      "failures": []
+    },
+    "analytic": {
+      "cases": 95,
+      "values": 3249,
+      "max_absolute_error": 6.02307145131098e-11,
+      "failures": []
+    },
+    "flux_random": {
+      "cases": 40,
+      "values": 1188,
+      "max_absolute_error": 1.7562340470789195e-14,
+      "failures": []
+    },
+    "analytic_random": {
+      "cases": 40,
+      "values": 1188,
+      "max_absolute_error": 2.4667767828390197e-14,
+      "failures": []
+    },
+    "limb": {
+      "cases": 20,
+      "values": 285,
+      "max_absolute_error": 3.740063814205996e-15,
+      "failures": []
+    },
+    "gradient": {
+      "cases": 35,
+      "values": 2394,
+      "max_absolute_error": 1.922824399702705e-10,
+      "failures": []
+    },
+    "rotation": {
+      "cases": 27,
+      "values": 12537,
+      "max_absolute_error": 6.443909811914558e-15,
+      "failures": []
+    },
+    "cel": {
+      "cases": 24,
+      "values": 24,
+      "max_absolute_error": 3.552713678800501e-15,
+      "failures": []
+    }
+  },
+  "passed": true
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/compare_reflected.py
+{
+  "cases": 120,
+  "max_absolute_error": 2.3630696982523958e-09,
+  "failures": [],
+  "passed": true
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/compare_oblate.py
+{
+  "cases": 54,
+  "max_absolute_error": 1.094391919101434e-09,
+  "spherical_cases": 18,
+  "spherical_max_absolute_error": 1.0685896612017132e-15,
+  "upstream_zero_flattening_floor_max_difference": 1.154700538292996e-06,
+  "note": "Positive flattening compared with upstream oblate kernel. Exact f=0 compared with upstream emitted sphere; oblate reference floors f to 1e-6 (macros.h STARRY_MIN_F).",
+  "failures": [],
+  "passed": true
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/compare_specialized_gradients.py
+{
+  "cases": 63,
+  "max_absolute_error": 1.214306433183765e-15,
+  "illumination_cases": 63,
+  "illumination_max_absolute_error": 6.036837696399289e-16,
+  "passed": true,
+  "reference": "pinned upstream reflected/occultation.h AD; separation, radius, phase geometry and roughness"
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/compare_oblate_derivatives.py
+{
+  "cases": 40,
+  "max_absolute_error": 1.055621701162579e-10,
+  "passed": true,
+  "reference": "pinned oblate/occultation.h automatic derivatives; separation, radius, flattening, angle"
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/compare_rv_derivatives.py
+{
+  "cases": 60,
+  "max_absolute_error": 7.275957614183426e-12,
+  "passed": true,
+  "reference": "upstream core.py OpsRV.compute_rv_filter, unmodified method body, complex-step derivatives"
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/independent_system.py
+{
+  "cases": 88,
+  "flux_max_absolute_error": 2.708944180085382e-14,
+  "rv_max_absolute_error": 2.9103830456733704e-10,
+  "passed": true,
+  "reference": "independent analytic disk overlap, circular Kepler orbit and retarded barycentric positions; complex-step derivatives"
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/independent_velocity.py
+{
+  "doppler_cases": 40,
+  "rv_cases": 24,
+  "doppler_max_absolute_error": 4.729372449219227e-11,
+  "rv_max_absolute_error": 2.6147972675971687e-12,
+  "passed": true,
+  "reference": "analytic dipole chord integrals and independent full-disk physical velocity quadrature; complex-step derivatives"
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/compare_source_solvers.py
+{
+  "cases": 6,
+  "max_absolute_error": 5.5004889532028756e-12,
+  "passed": true,
+  "reference": "unmodified upstream map/spectrum/tempering method bodies and LinAlgType.solve, NumPy primitives, shared native design inputs"
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/compare_source_orbits.py
+{"reference": "exoplanet v0.4.5 unmodified method bodies and independent Newton solver", "sha256": "f5ab60650ffbaffd7e8c61c35effc3954aa6bc5b831c048431d52b4871d1209a", "cases": 90, "max_position_error": 1.7113421790782013e-11}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/compare_specialized_high.py
+{
+  "cases": [
+    {
+      "mode": "reflected",
+      "degree": 13,
+      "error": 2.1149748619109232e-14
+    },
+    {
+      "mode": "reflected",
+      "degree": 13,
+      "error": 8.548717289613705e-15
+    },
+    {
+      "mode": "oblate",
+      "degree": 13,
+      "error": 7.51620987671231e-13
+    },
+    {
+      "mode": "reflected",
+      "degree": 16,
+      "error": 3.259059688787147e-13
+    },
+    {
+      "mode": "reflected",
+      "degree": 16,
+      "error": 5.057065877167588e-14
+    },
+    {
+      "mode": "oblate",
+      "degree": 16,
+      "error": 6.105116412413736e-13
+    }
+  ],
+  "passed": true
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/compare_rings.py
+{
+  "cases": [
+    {
+      "degree": 5,
+      "b": 0.0,
+      "r": 0.4,
+      "error": 5.551115123125783e-16,
+      "worst_degree": 3,
+      "worst_order": 0,
+      "old_green_difference": 4.440892098500626e-16,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 5,
+      "b": 0.3,
+      "r": 0.1,
+      "error": 6.886852199627924e-16,
+      "worst_degree": 5,
+      "worst_order": 0,
+      "old_green_difference": 5.551115123125783e-16,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 5,
+      "b": 0.7,
+      "r": 0.4,
+      "error": 7.077671781985373e-16,
+      "worst_degree": 5,
+      "worst_order": 0,
+      "old_green_difference": 5.828670879282072e-16,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 5,
+      "b": 1.2,
+      "r": 0.5,
+      "error": 4.510281037539698e-16,
+      "worst_degree": 5,
+      "worst_order": 0,
+      "old_green_difference": 4.926614671774132e-16,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 5,
+      "b": 0.5,
+      "r": 0.5,
+      "error": 2.4702462297909733e-15,
+      "worst_degree": 5,
+      "worst_order": -3,
+      "old_green_difference": 8.881784197001252e-15,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 5,
+      "b": 0.01,
+      "r": 1.0,
+      "error": 4.627266451950884e-15,
+      "worst_degree": 5,
+      "worst_order": -3,
+      "old_green_difference": 2.3745762300908524e-14,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 5,
+      "b": 2.0,
+      "r": 0.2,
+      "error": 9.298117831235686e-16,
+      "worst_degree": 4,
+      "worst_order": 0,
+      "old_green_difference": 1.27675647831893e-15,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 5,
+      "b": 1e-06,
+      "r": 0.1,
+      "error": 1.3253287356462806e-15,
+      "worst_degree": 5,
+      "worst_order": 0,
+      "old_green_difference": 6.661338147750939e-16,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 10,
+      "b": 0.0,
+      "r": 0.4,
+      "error": 5.767608612927688e-14,
+      "worst_degree": 10,
+      "worst_order": 0,
+      "old_green_difference": 1.9186041644303486e-14,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 10,
+      "b": 0.3,
+      "r": 0.1,
+      "error": 5.4636850599365516e-14,
+      "worst_degree": 10,
+      "worst_order": 0,
+      "old_green_difference": 1.2256862191861728e-13,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 10,
+      "b": 0.7,
+      "r": 0.4,
+      "error": 4.930431063421281e-14,
+      "worst_degree": 10,
+      "worst_order": 0,
+      "old_green_difference": 3.26405569239796e-14,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 10,
+      "b": 1.2,
+      "r": 0.5,
+      "error": 4.2674197509029455e-14,
+      "worst_degree": 10,
+      "worst_order": 0,
+      "old_green_difference": 6.013245457126004e-14,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 10,
+      "b": 0.5,
+      "r": 0.5,
+      "error": 3.5591668501311347e-13,
+      "worst_degree": 9,
+      "worst_order": -3,
+      "old_green_difference": 3.99555388774786e-13,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 10,
+      "b": 0.01,
+      "r": 1.0,
+      "error": 2.3789281308750354e-11,
+      "worst_degree": 10,
+      "worst_order": 0,
+      "old_green_difference": 8.063459188550892e-12,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 10,
+      "b": 2.0,
+      "r": 0.2,
+      "error": 5.0622700475955185e-14,
+      "worst_degree": 10,
+      "worst_order": 0,
+      "old_green_difference": 5.947672909734081e-14,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 10,
+      "b": 1e-06,
+      "r": 0.1,
+      "error": 8.090403347260633e-14,
+      "worst_degree": 10,
+      "worst_order": 0,
+      "old_green_difference": 9.496570196887433e-14,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 15,
+      "b": 0.0,
+      "r": 0.4,
+      "error": 1.8607407281656663e-12,
+      "worst_degree": 15,
+      "worst_order": 0,
+      "old_green_difference": 2.8884949987428854e-12,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 15,
+      "b": 0.3,
+      "r": 0.1,
+      "error": 1.640635544086777e-12,
+      "worst_degree": 15,
+      "worst_order": 0,
+      "old_green_difference": 2.3827780026852707e-12,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 15,
+      "b": 0.7,
+      "r": 0.4,
+      "error": 1.3286073630158768e-12,
+      "worst_degree": 15,
+      "worst_order": -1,
+      "old_green_difference": 2.1227516272537272e-12,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 15,
+      "b": 1.2,
+      "r": 0.5,
+      "error": 1.0311105268223653e-12,
+      "worst_degree": 15,
+      "worst_order": 0,
+      "old_green_difference": 2.1866952693017083e-12,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 15,
+      "b": 0.5,
+      "r": 0.5,
+      "error": 3.844215223924863e-10,
+      "worst_degree": 15,
+      "worst_order": -1,
+      "old_green_difference": 1.9161863762384712e-10,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 15,
+      "b": 0.01,
+      "r": 1.0,
+      "error": 4.7572141121570224e-08,
+      "worst_degree": 15,
+      "worst_order": -1,
+      "old_green_difference": 1.6149671659161906e-08,
+      "upstream_agrees": false,
+      "high_precision_checks": [
+        {
+          "index": 235,
+          "decimal_reference": "0.00021789283504410769692938433643104467521062032530647",
+          "rust_difference": 1.7320129705455933e-17,
+          "upstream_difference": 3.059591045608315e-08,
+          "quadrature_difference": 1e-52,
+          "passed": true
+        },
+        {
+          "index": 237,
+          "decimal_reference": "-0.0010619120741243378232683962440687031995427363547313",
+          "rust_difference": 1.4094628242311558e-17,
+          "upstream_difference": 2.6884847439652762e-08,
+          "quadrature_difference": 4e-52,
+          "passed": true
+        },
+        {
+          "index": 239,
+          "decimal_reference": "0.0015781612277656077583682243724677358260689649657434",
+          "rust_difference": 1.5829351718288365e-17,
+          "upstream_difference": 4.7572141137399576e-08,
+          "quadrature_difference": 1e-51,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "degree": 15,
+      "b": 2.0,
+      "r": 0.2,
+      "error": 4.579982226804447e-13,
+      "worst_degree": 14,
+      "worst_order": 0,
+      "old_green_difference": 1.1800803390027426e-12,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 15,
+      "b": 1e-06,
+      "r": 0.1,
+      "error": 1.6414924974839096e-12,
+      "worst_degree": 15,
+      "worst_order": 0,
+      "old_green_difference": 2.383495412922182e-12,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "b": 0.0,
+      "r": 0.4,
+      "error": 1.7224964995266535e-09,
+      "worst_degree": 20,
+      "worst_order": -1,
+      "old_green_difference": 1.7602443114217436e-10,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "b": 0.3,
+      "r": 0.1,
+      "error": 1.7820837514004317e-10,
+      "worst_degree": 20,
+      "worst_order": 4,
+      "old_green_difference": 8.897486566961099e-11,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "b": 0.7,
+      "r": 0.4,
+      "error": 5.76877287258859e-11,
+      "worst_degree": 20,
+      "worst_order": 4,
+      "old_green_difference": 1.317312856019548e-10,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "b": 1.2,
+      "r": 0.5,
+      "error": 1.3401136190333007e-10,
+      "worst_degree": 20,
+      "worst_order": 4,
+      "old_green_difference": 1.7198052704170408e-10,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "b": 0.5,
+      "r": 0.5,
+      "error": 4.1921498241531685e-08,
+      "worst_degree": 20,
+      "worst_order": 6,
+      "old_green_difference": 2.4092858940533146e-08,
+      "upstream_agrees": false,
+      "high_precision_checks": [
+        {
+          "index": 377,
+          "decimal_reference": "-0.013874230171431504601504100035080921932356798783679",
+          "rust_difference": 5.0306980803327406e-17,
+          "upstream_difference": 2.968386567971104e-08,
+          "quadrature_difference": 5e-51,
+          "passed": true
+        },
+        {
+          "index": 379,
+          "decimal_reference": "-0.014924470140804554259786916339976674645996256828999",
+          "rust_difference": 1.734723475976807e-17,
+          "upstream_difference": 3.586152319892677e-08,
+          "quadrature_difference": 1.9e-50,
+          "passed": true
+        },
+        {
+          "index": 420,
+          "decimal_reference": "-0.0058771231911921793237775961859288853199761210707906",
+          "rust_difference": 1.8995222061946038e-16,
+          "upstream_difference": 3.473812357820266e-08,
+          "quadrature_difference": 9.33e-50,
+          "passed": true
+        },
+        {
+          "index": 422,
+          "decimal_reference": "0.0020472720988108571422761352769618081856257784584042",
+          "rust_difference": 3.382710778154774e-17,
+          "upstream_difference": 2.8885273153402002e-08,
+          "quadrature_difference": 5.61e-50,
+          "passed": true
+        },
+        {
+          "index": 426,
+          "decimal_reference": "0.014470422447892411706897857699000090699875651967417",
+          "rust_difference": 1.5612511283791264e-17,
+          "upstream_difference": 4.1921498257144196e-08,
+          "quadrature_difference": 2.4e-50,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "b": 0.01,
+      "r": 1.0,
+      "error": 3.9462931090785726e-05,
+      "worst_degree": 20,
+      "worst_order": 4,
+      "old_green_difference": 0.00011795338689497554,
+      "upstream_agrees": false,
+      "high_precision_checks": [
+        {
+          "index": 235,
+          "decimal_reference": "0.00021789283504410769692938433643104467521062032530647",
+          "rust_difference": 1.7320129705455933e-17,
+          "upstream_difference": 3.0590983435486085e-08,
+          "quadrature_difference": 1e-52,
+          "passed": true
+        },
+        {
+          "index": 237,
+          "decimal_reference": "-0.0010619120741243378232683962440687031995427363547313",
+          "rust_difference": 1.4094628242311558e-17,
+          "upstream_difference": 2.6879817792814856e-08,
+          "quadrature_difference": 4e-52,
+          "passed": true
+        },
+        {
+          "index": 239,
+          "decimal_reference": "0.0015781612277656077583682243724677358260689649657434",
+          "rust_difference": 1.5829351718288365e-17,
+          "upstream_difference": 4.757724789269599e-08,
+          "quadrature_difference": 1e-51,
+          "passed": true
+        },
+        {
+          "index": 272,
+          "decimal_reference": "0.0012514424578593586491492166425542873357972728424223",
+          "rust_difference": 1.8214596497756474e-17,
+          "upstream_difference": 1.9289129724172835e-07,
+          "quadrature_difference": 7e-52,
+          "passed": true
+        },
+        {
+          "index": 274,
+          "decimal_reference": "-0.00055396272194736711751099425851802507652108405577849",
+          "rust_difference": 5.9631119486702744e-18,
+          "upstream_difference": 6.575346638601053e-08,
+          "quadrature_difference": 2e-53,
+          "passed": true
+        },
+        {
+          "index": 276,
+          "decimal_reference": "-0.00050249427514358271711122097823301093096722030419722",
+          "rust_difference": 1.2468324983583301e-17,
+          "upstream_difference": 1.5146423860761763e-07,
+          "quadrature_difference": 3e-53,
+          "passed": true
+        },
+        {
+          "index": 278,
+          "decimal_reference": "0.00027560264475011251190409705182961105212793360251669",
+          "rust_difference": 1.734723475976807e-17,
+          "upstream_difference": 7.459575689273837e-08,
+          "quadrature_difference": 4e-53,
+          "passed": true
+        },
+        {
+          "index": 280,
+          "decimal_reference": "-0.00016564787373703865598296364607360452237805406415990",
+          "rust_difference": 1.8241701552068612e-17,
+          "upstream_difference": 3.19932502310322e-08,
+          "quadrature_difference": 1.9e-52,
+          "passed": true
+        },
+        {
+          "index": 282,
+          "decimal_reference": "0.00011249734079458456986463039896219976842100190704597",
+          "rust_difference": 2.72405795836983e-17,
+          "upstream_difference": 3.464344763475316e-08,
+          "quadrature_difference": 8e-53,
+          "passed": true
+        },
+        {
+          "index": 295,
+          "decimal_reference": "0.000021832633491873386515396377794064704673950537183551",
+          "rust_difference": 8.161331853384635e-17,
+          "upstream_difference": 8.102355040541859e-08,
+          "quadrature_difference": 2.11e-52,
+          "passed": true
+        },
+        {
+          "index": 297,
+          "decimal_reference": "-0.000041617627067326938214499365260399271136202526930753",
+          "rust_difference": 1.4033641870109248e-17,
+          "upstream_difference": 2.828453186272994e-07,
+          "quadrature_difference": 1.79e-52,
+          "passed": true
+        },
+        {
+          "index": 299,
+          "decimal_reference": "0.000093063716462294350538608285685569677393821453845165",
+          "rust_difference": 1.543632843076237e-17,
+          "upstream_difference": 1.2517729953749493e-07,
+          "quadrature_difference": 5.2e-53,
+          "passed": true
+        },
+        {
+          "index": 301,
+          "decimal_reference": "-0.00027328987225697508649724089298270900629518139860077",
+          "rust_difference": 8.890457814381136e-18,
+          "upstream_difference": 4.5990173533068217e-07,
+          "quadrature_difference": 3e-53,
+          "passed": true
+        },
+        {
+          "index": 303,
+          "decimal_reference": "0.0011964230681382504410884153324508695067625885496409",
+          "rust_difference": 1.0842021724855044e-18,
+          "upstream_difference": 3.9472204775223285e-07,
+          "quadrature_difference": 5e-52,
+          "passed": true
+        },
+        {
+          "index": 305,
+          "decimal_reference": "-0.00033565241417181510411855188133439800774789896232929",
+          "rust_difference": 1.7997756063259374e-17,
+          "upstream_difference": 4.708744401740522e-07,
+          "quadrature_difference": 7.1e-52,
+          "passed": true
+        },
+        {
+          "index": 342,
+          "decimal_reference": "-0.00020968912267553841740309014003840383153474166600435",
+          "rust_difference": 2.2524300133386355e-17,
+          "upstream_difference": 2.5508699827039405e-06,
+          "quadrature_difference": 1.05e-51,
+          "passed": true
+        },
+        {
+          "index": 344,
+          "decimal_reference": "0.0011806938034613599426115100183501768267927930241542",
+          "rust_difference": 4.336808689942018e-19,
+          "upstream_difference": 1.5962340898720284e-07,
+          "quadrature_difference": 2e-52,
+          "passed": true
+        },
+        {
+          "index": 346,
+          "decimal_reference": "0.00040947528131221076162640285276259935005840306775632",
+          "rust_difference": 9.215718466126788e-19,
+          "upstream_difference": 3.2891398455362083e-06,
+          "quadrature_difference": 1.6e-52,
+          "passed": true
+        },
+        {
+          "index": 348,
+          "decimal_reference": "-0.00025881660852743498769188720431233430510826589780479",
+          "rust_difference": 8.077306185017008e-18,
+          "upstream_difference": 4.049782456990369e-07,
+          "quadrature_difference": 7e-53,
+          "passed": true
+        },
+        {
+          "index": 350,
+          "decimal_reference": "0.00015904126003320313822776623245576959000304617186013",
+          "rust_difference": 1.6886448836461732e-17,
+          "upstream_difference": 1.6332099050652424e-06,
+          "quadrature_difference": 3e-52,
+          "passed": true
+        },
+        {
+          "index": 352,
+          "decimal_reference": "-0.00010781695852412850290453031390038284823506937170299",
+          "rust_difference": 1.3010426069826053e-17,
+          "upstream_difference": 7.184630870257867e-07,
+          "quadrature_difference": 1.7e-52,
+          "passed": true
+        },
+        {
+          "index": 354,
+          "decimal_reference": "0.000079578560837793623512352429192541999633258337881594",
+          "rust_difference": 1.997642502804542e-17,
+          "upstream_difference": 6.364260023933939e-08,
+          "quadrature_difference": 1.79e-52,
+          "passed": true
+        },
+        {
+          "index": 356,
+          "decimal_reference": "-0.000063440170856106218798638449339326814240186619882768",
+          "rust_difference": 2.0965759510438442e-17,
+          "upstream_difference": 3.404815109352502e-08,
+          "quadrature_difference": 3.49e-52,
+          "passed": true
+        },
+        {
+          "index": 358,
+          "decimal_reference": "0.000055479805638702335429565888429114771131084301751687",
+          "rust_difference": 2.965970568105658e-17,
+          "upstream_difference": 3.592648227359257e-08,
+          "quadrature_difference": 9.3e-52,
+          "passed": true
+        },
+        {
+          "index": 363,
+          "decimal_reference": "0.0000070020884857812386690778902213350901198475454733236",
+          "rust_difference": 1.4163237911039156e-17,
+          "upstream_difference": 9.738159645973799e-08,
+          "quadrature_difference": 5.775e-52,
+          "passed": true
+        },
+        {
+          "index": 365,
+          "decimal_reference": "-0.000010197003536017303525588809102040224477675528525163",
+          "rust_difference": 5.896704565605537e-17,
+          "upstream_difference": 4.5502811392474536e-07,
+          "quadrature_difference": 7e-53,
+          "passed": true
+        },
+        {
+          "index": 367,
+          "decimal_reference": "0.000016101928458637655587984293648807926840073835541554",
+          "rust_difference": 2.7606497816912157e-17,
+          "upstream_difference": 2.933208854543693e-07,
+          "quadrature_difference": 1.51e-52,
+          "passed": true
+        },
+        {
+          "index": 369,
+          "decimal_reference": "-0.000027495969202116915385061171959395373247903022647079",
+          "rust_difference": 6.2636392383561e-17,
+          "upstream_difference": 2.7892844887097977e-06,
+          "quadrature_difference": 2.8e-52,
+          "passed": true
+        },
+        {
+          "index": 371,
+          "decimal_reference": "0.000052062175039387327525559882330721582416317783657710",
+          "rust_difference": 1.9718927012080112e-17,
+          "upstream_difference": 4.118858139858195e-06,
+          "quadrature_difference": 2.95e-52,
+          "passed": true
+        },
+        {
+          "index": 373,
+          "decimal_reference": "-0.00011529681058582679334109175272497485395786185382297",
+          "rust_difference": 8.904010341537205e-18,
+          "upstream_difference": 4.3759900846511305e-07,
+          "quadrature_difference": 9e-53,
+          "passed": true
+        },
+        {
+          "index": 375,
+          "decimal_reference": "0.00033062662407252819411535907694345353093941483157367",
+          "rust_difference": 7.48099499014998e-18,
+          "upstream_difference": 4.7086263264616924e-07,
+          "quadrature_difference": 1.5e-52,
+          "passed": true
+        },
+        {
+          "index": 377,
+          "decimal_reference": "-0.0012833187396457820670694101736386914276811510868459",
+          "rust_difference": 1.4094628242311558e-17,
+          "upstream_difference": 1.5509625145141738e-06,
+          "quadrature_difference": 2e-52,
+          "passed": true
+        },
+        {
+          "index": 379,
+          "decimal_reference": "-0.00083474317077948991056265716753371150442191951651013",
+          "rust_difference": 2.677979366039196e-17,
+          "upstream_difference": 8.967441313418234e-06,
+          "quadrature_difference": 9.5e-52,
+          "passed": true
+        },
+        {
+          "index": 420,
+          "decimal_reference": "-0.00076118266013196065789105371842692205768344543409942",
+          "rust_difference": 2.6346112791397758e-17,
+          "upstream_difference": 3.571345928780748e-05,
+          "quadrature_difference": 1.12e-51,
+          "passed": true
+        },
+        {
+          "index": 422,
+          "decimal_reference": "-0.0017263556481036845205877127249990068918345782235794",
+          "rust_difference": 9.974659986866641e-18,
+          "upstream_difference": 1.0416513325163263e-05,
+          "quadrature_difference": 6e-52,
+          "passed": true
+        },
+        {
+          "index": 424,
+          "decimal_reference": "-0.00029487890104843765972171904597730245214736793278889",
+          "rust_difference": 1.6750923564901044e-17,
+          "upstream_difference": 3.9462931090768975e-05,
+          "quadrature_difference": 1.8e-52,
+          "passed": true
+        },
+        {
+          "index": 426,
+          "decimal_reference": "0.00023751191629719958561970998499984752264760855405577",
+          "rust_difference": 1.2956215961201778e-17,
+          "upstream_difference": 2.4567717198247348e-05,
+          "quadrature_difference": 1e-52,
+          "passed": true
+        },
+        {
+          "index": 428,
+          "decimal_reference": "-0.00015173219722156111142253779530885864577073732359599",
+          "rust_difference": 8.754932542820448e-18,
+          "upstream_difference": 8.361270329716291e-06,
+          "quadrature_difference": 4.1e-52,
+          "passed": true
+        },
+        {
+          "index": 430,
+          "decimal_reference": "0.00010365575677067469054811820963722340686873213605961",
+          "rust_difference": 1.961050679483156e-17,
+          "upstream_difference": 1.0024187683720424e-05,
+          "quadrature_difference": 3.1e-52,
+          "passed": true
+        },
+        {
+          "index": 432,
+          "decimal_reference": "-0.000076086322880253276221044175518990689403991984845487",
+          "rust_difference": 1.8309464187848956e-17,
+          "upstream_difference": 1.8508985965073616e-06,
+          "quadrature_difference": 2.64e-52,
+          "passed": true
+        },
+        {
+          "index": 434,
+          "decimal_reference": "0.000059500953208544629442159592283434226985416274493817",
+          "rust_difference": 2.1067403464108958e-17,
+          "upstream_difference": 1.1256751256432567e-06,
+          "quadrature_difference": 4.28e-52,
+          "passed": true
+        },
+        {
+          "index": 436,
+          "decimal_reference": "-0.000049536065572493363993435048772542302579969158601726",
+          "rust_difference": 2.0261028098322864e-17,
+          "upstream_difference": 1.203134814874713e-06,
+          "quadrature_difference": 1.34e-52,
+          "passed": true
+        },
+        {
+          "index": 438,
+          "decimal_reference": "0.000044800544280661684950431768675925725098726043351974",
+          "rust_difference": 2.4509745361750435e-17,
+          "upstream_difference": 2.341048541538407e-07,
+          "quadrature_difference": 9.1e-53,
+          "passed": true
+        }
+      ],
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "b": 2.0,
+      "r": 0.2,
+      "error": 1.4090151267964757e-10,
+      "worst_degree": 20,
+      "worst_order": 4,
+      "old_green_difference": 1.3101555864508674e-10,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "b": 1e-06,
+      "r": 0.1,
+      "error": 1.8554757725757845e-10,
+      "worst_degree": 20,
+      "worst_order": 4,
+      "old_green_difference": 2.516925348694521e-10,
+      "upstream_agrees": true,
+      "high_precision_checks": [],
+      "passed": true
+    }
+  ],
+  "max_absolute_error": 3.9462931090785726e-05,
+  "note": "Original upstream discrepancy retained. Every response outside the unchanged 2e-8 comparison tolerance is checked separately with 50-digit quadrature.",
+  "passed": true
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/decimal_rings.py
+{
+  "precision_digits": 50,
+  "cases": [
+    {
+      "degree": 5,
+      "order": -1,
+      "b": 0.3,
+      "r": 0.1,
+      "decimal_reference": "-0.026150806179868169601492236304472302203717366268751",
+      "quadrature_difference": 2e-51,
+      "rust_difference": 2.7755575615628914e-17,
+      "upstream_difference": 3.469446951953614e-18,
+      "passed": true
+    },
+    {
+      "degree": 5,
+      "order": 2,
+      "b": 0.7,
+      "r": 0.4,
+      "decimal_reference": "0.093311846914854711782192811599889472875459707797054",
+      "quadrature_difference": 6.0242851e-43,
+      "rust_difference": 0.0,
+      "upstream_difference": 1.5265566588595902e-16,
+      "passed": true
+    },
+    {
+      "degree": 15,
+      "order": -1,
+      "b": 0.01,
+      "r": 1.0,
+      "decimal_reference": "0.0015781612277656077583682243724677358260689649657434",
+      "quadrature_difference": 1e-51,
+      "rust_difference": 1.5829351718288365e-17,
+      "upstream_difference": 4.7572141137399576e-08,
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "order": 6,
+      "b": 0.5,
+      "r": 0.5,
+      "decimal_reference": "0.014470422447892411706897857699000090699875651967417",
+      "quadrature_difference": 2.4e-50,
+      "rust_difference": 1.5612511283791264e-17,
+      "upstream_difference": 4.1921498257144196e-08,
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "order": 4,
+      "b": 0.01,
+      "r": 1.0,
+      "decimal_reference": "-0.00029487890104843765972171904597730245214736793278889",
+      "quadrature_difference": 1.8e-52,
+      "rust_difference": 1.6750923564901044e-17,
+      "upstream_difference": 3.9462931090768975e-05,
+      "passed": true
+    }
+  ],
+  "passed": true
+}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/feature_audit.py
+{"implemented": 49, "out_of_api_scope": 7, "state_api": 6}
+Running: C:\Users\ATAL\miniforge3\python.exe validation/source_boundaries.py
+{
+  "gradient_operators": [
+    {
+      "source": "_core/ops/integration.py:36",
+      "operator": "sTGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/integration.py:96",
+      "operator": "rTReflectedGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/integration.py:169",
+      "operator": "sTReflectedGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/integration.py:238",
+      "operator": "sTOblateGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/rotation.py:34",
+      "operator": "dotRGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/rotation.py:82",
+      "operator": "tensordotRzGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/filter.py:43",
+      "operator": "FGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/polybasis.py:31",
+      "operator": "pTGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/spot.py:38",
+      "operator": "spotYlmGradientOp",
+      "defines_further_grad": false
+    }
+  ],
+  "limb_derivative_outputs_reject_further_gradients": true,
+  "all_body_rv_flags_must_match": true,
+  "specialized_map_combinations_rejected": true,
+  "oblate_secondaries_rejected": true,
+  "conclusion": "No blanket arbitrary-flux-Hessian requirement; mixed oblate-primary/RV-secondary is excluded by upstream.",
+  "passed": true
+}
+Running: C:\Users\ATAL\miniforge3\python.exe -m unittest discover -s python -v
+test_normalized_and_unnormalized_joint_fit (test_bilinear.BilinearDoppler.test_normalized_and_unnormalized_joint_fit) ... ok
+test_quotients_and_all_derivatives (test_continuum.SelectedContinuum.test_quotients_and_all_derivatives) ... ok
+test_resampled_normalization (test_continuum.SelectedContinuum.test_resampled_normalization) ... ok
+test_high_degree_and_zero_rotation (test_doppler_derivatives.DopplerDerivatives.test_high_degree_and_zero_rotation) ... ok
+test_multicomponent_resampling (test_doppler_derivatives.DopplerDerivatives.test_multicomponent_resampling) ... ok
+test_physical_kernel_and_spectrum_derivatives (test_doppler_derivatives.DopplerDerivatives.test_physical_kernel_and_spectrum_derivatives) ... ok
+test_render_coordinates_and_smoothing (test_exposure.ExposureRules.test_render_coordinates_and_smoothing) ... ok
+test_vector_exposures_and_rv (test_exposure.ExposureRules.test_vector_exposures_and_rv) ... ok
+test_degree_angles_match_radians (test_extended.ExtendedInterfaceTests.test_degree_angles_match_radians) ... ok
+test_doppler_convolution (test_extended.ExtendedInterfaceTests.test_doppler_convolution) ... ok
+test_finite_source_against_lambert_integrals (test_extended.ExtendedInterfaceTests.test_finite_source_against_lambert_integrals) ... ok
+test_gaussian_inference_matches_numpy (test_extended.ExtendedInterfaceTests.test_gaussian_inference_matches_numpy) ... ok
+test_oriented_limb_geometry_gradient (test_extended.ExtendedInterfaceTests.test_oriented_limb_geometry_gradient) ... ok
+test_persistent_updates_and_slice_indices (test_extended.ExtendedInterfaceTests.test_persistent_updates_and_slice_indices) ... ok
+test_reflected_broadcast_and_spectral (test_extended.ExtendedInterfaceTests.test_reflected_broadcast_and_spectral) ... ok
+test_reflected_system_scales_with_source_luminosity (test_extended.ExtendedInterfaceTests.test_reflected_system_scales_with_source_luminosity) ... ok
+test_specialized_maps_and_errors (test_extended.ExtendedInterfaceTests.test_specialized_maps_and_errors) ... ok
+test_surface_roundtrip (test_extended.ExtendedInterfaceTests.test_surface_roundtrip) ... ok
+test_system_rotational_rv (test_extended.ExtendedInterfaceTests.test_system_rotational_rv) ... ok
+test_system_transit_spectral_and_positions (test_extended.ExtendedInterfaceTests.test_system_transit_spectral_and_positions) ... ok
+test_finite_source_radius_and_angle_units (test_illumination_derivatives.IlluminationDerivatives.test_finite_source_radius_and_angle_units) ... ok
+test_lambert_phase_poles (test_illumination_derivatives.IlluminationDerivatives.test_lambert_phase_poles) ... ok
+test_point_source_and_inverse_square_identity (test_illumination_derivatives.IlluminationDerivatives.test_point_source_and_inverse_square_identity) ... ok
+test_zero_finite_source_radius_limit (test_illumination_derivatives.IlluminationDerivatives.test_zero_finite_source_radius_limit) ... ok
+test_exact_scattering_and_oblate_intensity (test_imaging_system.ImagingSystemTests.test_exact_scattering_and_oblate_intensity) ... ok
+test_exposure_rv_is_ratio_of_integrated_fluxes (test_imaging_system.ImagingSystemTests.test_exposure_rv_is_ratio_of_integrated_fluxes) ... ok
+test_local_filters_and_intrinsic_rectangular_projection (test_imaging_system.ImagingSystemTests.test_local_filters_and_intrinsic_rectangular_projection) ... ok
+test_oblate_system_transit_and_spectral_channels (test_imaging_system.ImagingSystemTests.test_oblate_system_transit_and_spectral_channels) ... ok
+test_rendered_flux_matches_forward_models (test_imaging_system.ImagingSystemTests.test_rendered_flux_matches_forward_models) ... ok
+test_invalid_arguments (test_interface.InterfaceTests.test_invalid_arguments) ... ok
+test_limb_darkening (test_interface.InterfaceTests.test_limb_darkening) ... ok
+test_native_gradient (test_interface.InterfaceTests.test_native_gradient) ... ok
+test_native_rotation (test_interface.InterfaceTests.test_native_rotation) ... ok
+test_uniform_map_and_amplitude (test_interface.InterfaceTests.test_uniform_map_and_amplitude) ... ok
+test_diagonal_inference_matches_full_covariance (test_inverse.InverseTests.test_diagonal_inference_matches_full_covariance) ... ok
+test_doppler_design_fit_and_jacobian (test_inverse.InverseTests.test_doppler_design_fit_and_jacobian) ... ok
+test_emitted_jacobian_and_surface_minimum (test_inverse.InverseTests.test_emitted_jacobian_and_surface_minimum) ... ok
+test_limb_physical (test_inverse.InverseTests.test_limb_physical) ... ok
+test_normalized_map_fit (test_inverse.InverseTests.test_normalized_map_fit) ... ok
+test_system_design_and_map_inference (test_inverse.InverseTests.test_system_design_and_map_inference) ... ok
+test_wavelength_resampling (test_inverse.InverseTests.test_wavelength_resampling) ... ok
+test_native_upstream_iteration_and_soft_threshold (test_l1.SparseInference.test_native_upstream_iteration_and_soft_threshold) ... ok
+test_sparse_spectrum_and_epoch_errors (test_l1.SparseInference.test_sparse_spectrum_and_epoch_errors) ... ok
+test_cube_reconstructs_surface_spectra (test_loading.NativeLoading.test_cube_reconstructs_surface_spectra) ... ok
+test_smoothing_and_partial_extent (test_loading.NativeLoading.test_smoothing_and_partial_extent) ... ok
+test_truncated_svd_against_numpy (test_loading.NativeLoading.test_truncated_svd_against_numpy) ... ok
+test_contact_and_disabled_branches (test_numerical_limits.NumericalLimits.test_contact_and_disabled_branches) ... ok
+test_doppler_kinks_and_bounds (test_numerical_limits.NumericalLimits.test_doppler_kinks_and_bounds) ... ok
+test_reflected_singular_domains (test_numerical_limits.NumericalLimits.test_reflected_singular_domains) ... ok
+test_physical_derivatives_and_normalization (test_oblate_derivatives.OblateDerivatives.test_physical_derivatives_and_normalization) ... ok
+test_projected_area_derivative_and_angle_units (test_oblate_derivatives.OblateDerivatives.test_projected_area_derivative_and_angle_units) ... ok
+test_broadcast_values_and_angle_derivatives (test_orbit_derivatives.KeplerDerivatives.test_broadcast_values_and_angle_derivatives) ... ok
+test_pixels (test_pixels_spectral.NativeTransforms.test_pixels) ... ok
+test_spectral_map_inference_correlated_prior (test_pixels_spectral.NativeTransforms.test_spectral_map_inference_correlated_prior) ... ok
+test_spectral_operator_resampled_adjoint (test_pixels_spectral.NativeTransforms.test_spectral_operator_resampled_adjoint) ... ok
+test_spectral_scalar_amplitude_transforms (test_pixels_spectral.NativeTransforms.test_spectral_scalar_amplitude_transforms) ... ok
+test_spectral_system_joint_inference (test_pixels_spectral.NativeTransforms.test_spectral_system_joint_inference) ... ok
+test_high_degree (test_rv_derivatives.RVDerivatives.test_high_degree) ... ok
+test_parameters_coefficients_and_limb (test_rv_derivatives.RVDerivatives.test_parameters_coefficients_and_limb) ... ok
+test_spectral_units_zero_amplitude_and_eclipse (test_rv_derivatives.RVDerivatives.test_spectral_units_zero_amplitude_and_eclipse) ... ok
+test_bilinear_tempered_conditional_solutions (test_solver_modes.SolverModes.test_bilinear_tempered_conditional_solutions) ... ok
+test_deconvolution_initialization (test_solver_modes.SolverModes.test_deconvolution_initialization) ... ok
+test_joint_nonlinear_objective (test_solver_modes.SolverModes.test_joint_nonlinear_objective) ... ok
+test_tempered_source_equations_and_fixed_baseline (test_solver_modes.SolverModes.test_tempered_source_equations_and_fixed_baseline) ... ok
+test_source_convention_derivatives (test_source_system.SourceSystem.test_source_convention_derivatives) ... ok
+test_finite_source_spectral_and_hidden (test_specialized_gradients.SpecializedGradients.test_finite_source_spectral_and_hidden) ... ok
+test_shape_derivatives_against_flux_differences (test_specialized_gradients.SpecializedGradients.test_shape_derivatives_against_flux_differences) ... ok
+test_view_coefficients_limb_and_amplitude (test_specialized_jacobian.FullSpecializedJacobians.test_view_coefficients_limb_and_amplitude) ... ok
+test_finite_source_radius_and_mass (test_system_derivatives.SystemDerivatives.test_finite_source_radius_and_mass) ... ok
+test_orbits_spins_delay_exposure_and_overlap (test_system_derivatives.SystemDerivatives.test_orbits_spins_delay_exposure_and_overlap) ... ok
+test_reflected_and_oblate (test_system_derivatives.SystemDerivatives.test_reflected_and_oblate) ... ok
+test_rv_orbits_spins_masses_radii_and_exposure (test_system_derivatives.SystemDerivatives.test_rv_orbits_spins_masses_radii_and_exposure) ... ok
+test_spectral_angles_and_gravity (test_system_derivatives.SystemDerivatives.test_spectral_angles_and_gravity) ... ok
+test_native_images_positions_and_phases (test_system_render.SystemRendering.test_native_images_positions_and_phases) ... ok
+test_reflected_oblate_overlap_and_gravity (test_system_surface.SystemSurface.test_reflected_oblate_overlap_and_gravity) ... ok
+test_rv_surface_spectral_exposure (test_system_surface.SystemSurface.test_rv_surface_spectral_exposure) ... ok
+test_zero_primary_amplitude_reflection_coupling (test_system_surface.SystemSurface.test_zero_primary_amplitude_reflection_coupling) ... ok
+
+----------------------------------------------------------------------
+Ran 77 tests in 56.790s
+
+OK
+Running: C:\Users\ATAL\miniforge3\python.exe validation/upstream_python.py
+........................................................................ [ 36%]
+........................................................................ [ 72%]
+........................................................                 [100%]
+============================== warnings summary ===============================
+.test-deps\_pytest\python.py:124
+  D:\Games\starry-rust\.test-deps\_pytest\python.py:124: PytestRemovedIn10Warning: Passing a non-Collection iterable to parametrize is deprecated.
+  Test: tests/greedy/test_solve_greedy.py::test_solve, argvalues type: product
+  Please convert to a list or tuple.
+  See https://docs.pytest.org/en/stable/deprecations.html#parametrize-iterators
+    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)
+
+.test-deps\_pytest\python.py:124
+  D:\Games\starry-rust\.test-deps\_pytest\python.py:124: PytestRemovedIn10Warning: Passing a non-Collection iterable to parametrize is deprecated.
+  Test: tests/greedy/test_solve_greedy.py::test_lnlike, argvalues type: product
+  Please convert to a list or tuple.
+  See https://docs.pytest.org/en/stable/deprecations.html#parametrize-iterators
+    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)
+
+.test-deps\_pytest\python.py:124
+  D:\Games\starry-rust\.test-deps\_pytest\python.py:124: PytestRemovedIn10Warning: Passing a non-Collection iterable to parametrize is deprecated.
+  Test: tests/greedy/test_system_solve_greedy.py::test_solve, argvalues type: product
+  Please convert to a list or tuple.
+  See https://docs.pytest.org/en/stable/deprecations.html#parametrize-iterators
+    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)
+
+.test-deps\_pytest\python.py:124
+  D:\Games\starry-rust\.test-deps\_pytest\python.py:124: PytestRemovedIn10Warning: Passing a non-Collection iterable to parametrize is deprecated.
+  Test: tests/greedy/test_system_solve_greedy.py::test_lnlike, argvalues type: product
+  Please convert to a list or tuple.
+  See https://docs.pytest.org/en/stable/deprecations.html#parametrize-iterators
+    metafunc.parametrize(*marker.args, **marker.kwargs, _param_mark=marker)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+200 passed, 4 warnings in 18.04s
+All checks passed. Reports: validation/report.json and validation/transit.csv

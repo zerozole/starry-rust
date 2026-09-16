@@ -1,0 +1,15 @@
+[package]
+name = "starry-rust"
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+description = "In-progress native Rust port of starry's spherical harmonic light curve core"
+
+[lib]
+name = "starry_rust"
+crate-type = ["rlib", "cdylib"]
+
+[profile.release]
+lto = true
+codegen-units = 1
+

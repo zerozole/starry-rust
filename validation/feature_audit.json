@@ -1,0 +1,1940 @@
+{
+  "scope": "Numerical Rust functionality plus new Python API; no Theano compatibility",
+  "evidence_warning": "Implemented means a code path exists, not full validation or completeness.",
+  "counts": {
+    "implemented": 49,
+    "out_of_api_scope": 7,
+    "state_api": 6
+  },
+  "methods": [
+    {
+      "source": "maps.py:339",
+      "method": "MapBase.reset",
+      "status": "state_api",
+      "equivalent": "construct a new map or assign explicit coefficients"
+    },
+    {
+      "source": "maps.py:377",
+      "method": "MapBase.show",
+      "status": "out_of_api_scope",
+      "equivalent": "plotting convenience; numerical render outputs supplied"
+    },
+    {
+      "source": "maps.py:736",
+      "method": "MapBase.limbdark_is_physical",
+      "status": "implemented",
+      "equivalent": "surface::limb_is_physical"
+    },
+    {
+      "source": "maps.py:752",
+      "method": "MapBase.set_data",
+      "status": "implemented",
+      "equivalent": "new Python inference inputs"
+    },
+    {
+      "source": "maps.py:775",
+      "method": "MapBase.set_prior",
+      "status": "implemented",
+      "equivalent": "native Gaussian inference"
+    },
+    {
+      "source": "maps.py:817",
+      "method": "MapBase.remove_prior",
+      "status": "implemented",
+      "equivalent": "new Python inference state"
+    },
+    {
+      "source": "maps.py:822",
+      "method": "MapBase.solve",
+      "status": "implemented",
+      "equivalent": "native Gaussian solves; Doppler conditional, bilinear and joint nonlinear fits"
+    },
+    {
+      "source": "maps.py:875",
+      "method": "MapBase.lnlike",
+      "status": "implemented",
+      "equivalent": "inference.rs marginal likelihood"
+    },
+    {
+      "source": "maps.py:955",
+      "method": "MapBase.draw",
+      "status": "implemented",
+      "equivalent": "posterior Gaussian draws"
+    },
+    {
+      "source": "maps.py:1029",
+      "method": "YlmBase.reset",
+      "status": "state_api",
+      "equivalent": "construct a new map or assign explicit coefficients"
+    },
+    {
+      "source": "maps.py:1060",
+      "method": "YlmBase.design_matrix",
+      "status": "implemented",
+      "equivalent": "Map/System/Doppler designs; unrestricted Doppler matrix-free operator"
+    },
+    {
+      "source": "maps.py:1087",
+      "method": "YlmBase.intensity_design_matrix",
+      "status": "implemented",
+      "equivalent": "Map.intensity_design_matrix"
+    },
+    {
+      "source": "maps.py:1114",
+      "method": "YlmBase.flux",
+      "status": "implemented",
+      "equivalent": "map/reflected/oblate/system/doppler Rust modules"
+    },
+    {
+      "source": "maps.py:1155",
+      "method": "YlmBase.intensity",
+      "status": "implemented",
+      "equivalent": "map/imaging Rust modules; Doppler component Map access"
+    },
+    {
+      "source": "maps.py:1191",
+      "method": "YlmBase.render",
+      "status": "implemented",
+      "equivalent": "imaging Rust module; Doppler component Map access"
+    },
+    {
+      "source": "maps.py:1258",
+      "method": "YlmBase.get_latlon_grid",
+      "status": "implemented",
+      "equivalent": "imaging::coordinate_grid and Map.get_latlon_grid"
+    },
+    {
+      "source": "maps.py:1289",
+      "method": "YlmBase.load",
+      "status": "implemented",
+      "equivalent": "native sample fitting, smoothing and cube SVD; numeric arrays with documented new grid convention"
+    },
+    {
+      "source": "maps.py:1420",
+      "method": "YlmBase.rotate",
+      "status": "implemented",
+      "equivalent": "rotation.rs"
+    },
+    {
+      "source": "maps.py:1447",
+      "method": "YlmBase.spot",
+      "status": "implemented",
+      "equivalent": "surface::add_spot"
+    },
+    {
+      "source": "maps.py:1548",
+      "method": "YlmBase.minimize",
+      "status": "implemented",
+      "equivalent": "bounded multistart surface search; scalar intrinsic maps"
+    },
+    {
+      "source": "maps.py:1587",
+      "method": "YlmBase.sht_matrix",
+      "status": "implemented",
+      "equivalent": "native pixel transforms and Gaussian smoothing weights"
+    },
+    {
+      "source": "maps.py:1670",
+      "method": "YlmBase.get_pixel_transforms",
+      "status": "implemented",
+      "equivalent": "pixels.rs compact forward/inverse/derivative operators"
+    },
+    {
+      "source": "maps.py:1897",
+      "method": "LimbDarkenedBase.flux",
+      "status": "implemented",
+      "equivalent": "map/reflected/oblate/system/doppler Rust modules"
+    },
+    {
+      "source": "maps.py:1917",
+      "method": "LimbDarkenedBase.intensity",
+      "status": "implemented",
+      "equivalent": "map/imaging Rust modules; Doppler component Map access"
+    },
+    {
+      "source": "maps.py:1949",
+      "method": "LimbDarkenedBase.render",
+      "status": "implemented",
+      "equivalent": "imaging Rust module; Doppler component Map access"
+    },
+    {
+      "source": "maps.py:2008",
+      "method": "RVBase.reset",
+      "status": "state_api",
+      "equivalent": "construct a new map or assign explicit coefficients"
+    },
+    {
+      "source": "maps.py:2073",
+      "method": "RVBase.rv",
+      "status": "implemented",
+      "equivalent": "rv.rs/system.rs"
+    },
+    {
+      "source": "maps.py:2120",
+      "method": "RVBase.intensity",
+      "status": "implemented",
+      "equivalent": "map/imaging Rust modules; Doppler component Map access"
+    },
+    {
+      "source": "maps.py:2147",
+      "method": "RVBase.render",
+      "status": "implemented",
+      "equivalent": "imaging Rust module; Doppler component Map access"
+    },
+    {
+      "source": "maps.py:2184",
+      "method": "RVBase.show",
+      "status": "out_of_api_scope",
+      "equivalent": "plotting convenience; numerical render outputs supplied"
+    },
+    {
+      "source": "maps.py:2237",
+      "method": "ReflectedBase.reset",
+      "status": "state_api",
+      "equivalent": "construct a new map or assign explicit coefficients"
+    },
+    {
+      "source": "maps.py:2282",
+      "method": "ReflectedBase.design_matrix",
+      "status": "implemented",
+      "equivalent": "Map/System/Doppler designs; unrestricted Doppler matrix-free operator"
+    },
+    {
+      "source": "maps.py:2332",
+      "method": "ReflectedBase.flux",
+      "status": "implemented",
+      "equivalent": "map/reflected/oblate/system/doppler Rust modules"
+    },
+    {
+      "source": "maps.py:2387",
+      "method": "ReflectedBase.intensity",
+      "status": "implemented",
+      "equivalent": "map/imaging Rust modules; Doppler component Map access"
+    },
+    {
+      "source": "maps.py:2472",
+      "method": "ReflectedBase.render",
+      "status": "implemented",
+      "equivalent": "imaging Rust module; Doppler component Map access"
+    },
+    {
+      "source": "maps.py:2571",
+      "method": "ReflectedBase.show",
+      "status": "out_of_api_scope",
+      "equivalent": "plotting convenience; numerical render outputs supplied"
+    },
+    {
+      "source": "maps.py:2745",
+      "method": "OblateBase.render",
+      "status": "implemented",
+      "equivalent": "imaging Rust module; Doppler component Map access"
+    },
+    {
+      "source": "maps.py:2837",
+      "method": "OblateBase.reset",
+      "status": "state_api",
+      "equivalent": "construct a new map or assign explicit coefficients"
+    },
+    {
+      "source": "maps.py:2929",
+      "method": "OblateBase.design_matrix",
+      "status": "implemented",
+      "equivalent": "Map/System/Doppler designs; unrestricted Doppler matrix-free operator"
+    },
+    {
+      "source": "maps.py:2968",
+      "method": "OblateBase.flux",
+      "status": "implemented",
+      "equivalent": "map/reflected/oblate/system/doppler Rust modules"
+    },
+    {
+      "source": "doppler.py:750",
+      "method": "DopplerMap.reset",
+      "status": "state_api",
+      "equivalent": "construct a new map or assign explicit coefficients"
+    },
+    {
+      "source": "doppler.py:804",
+      "method": "DopplerMap.load",
+      "status": "implemented",
+      "equivalent": "native sample fitting, smoothing and cube SVD; numeric arrays with documented new grid convention"
+    },
+    {
+      "source": "doppler.py:1074",
+      "method": "DopplerMap.sht_matrix",
+      "status": "implemented",
+      "equivalent": "native pixel transforms and Gaussian smoothing weights"
+    },
+    {
+      "source": "doppler.py:1170",
+      "method": "DopplerMap.design_matrix",
+      "status": "implemented",
+      "equivalent": "Map/System/Doppler designs; unrestricted Doppler matrix-free operator"
+    },
+    {
+      "source": "doppler.py:1265",
+      "method": "DopplerMap.flux",
+      "status": "implemented",
+      "equivalent": "map/reflected/oblate/system/doppler Rust modules"
+    },
+    {
+      "source": "doppler.py:1331",
+      "method": "DopplerMap.baseline",
+      "status": "implemented",
+      "equivalent": "Doppler baseline"
+    },
+    {
+      "source": "doppler.py:1357",
+      "method": "DopplerMap.dot",
+      "status": "implemented",
+      "equivalent": "Doppler fixed-map/fixed-spectrum and unrestricted forward/transpose"
+    },
+    {
+      "source": "doppler.py:1660",
+      "method": "DopplerMap.visualize",
+      "status": "out_of_api_scope",
+      "equivalent": "interactive plotting convenience"
+    },
+    {
+      "source": "doppler.py:1734",
+      "method": "DopplerMap.show",
+      "status": "out_of_api_scope",
+      "equivalent": "plotting convenience; numerical render outputs supplied"
+    },
+    {
+      "source": "doppler.py:1747",
+      "method": "DopplerMap.render",
+      "status": "implemented",
+      "equivalent": "imaging Rust module; Doppler component Map access"
+    },
+    {
+      "source": "doppler.py:1760",
+      "method": "DopplerMap.intensity",
+      "status": "implemented",
+      "equivalent": "map/imaging Rust modules; Doppler component Map access"
+    },
+    {
+      "source": "doppler.py:1773",
+      "method": "DopplerMap.solve",
+      "status": "implemented",
+      "equivalent": "L2/L1 spectra, conditional/bilinear/nonlinear fits; source temperature schedule and uniform-kernel L1 deconvolution initialization"
+    },
+    {
+      "source": "doppler.py:1949",
+      "method": "DopplerMap.optimize",
+      "status": "out_of_api_scope",
+      "equivalent": "upstream PyMC3-context wrapper; numerical optimizer coverage reviewed separately"
+    },
+    {
+      "source": "kepler.py:581",
+      "method": "System.show",
+      "status": "out_of_api_scope",
+      "equivalent": "plotting convenience; numerical render outputs supplied"
+    },
+    {
+      "source": "kepler.py:895",
+      "method": "System.design_matrix",
+      "status": "implemented",
+      "equivalent": "Map/System/Doppler designs; unrestricted Doppler matrix-free operator"
+    },
+    {
+      "source": "kepler.py:1005",
+      "method": "System.flux",
+      "status": "implemented",
+      "equivalent": "map/reflected/oblate/system/doppler Rust modules"
+    },
+    {
+      "source": "kepler.py:1078",
+      "method": "System.rv",
+      "status": "implemented",
+      "equivalent": "rv.rs/system.rs"
+    },
+    {
+      "source": "kepler.py:1256",
+      "method": "System.position",
+      "status": "implemented",
+      "equivalent": "orbit.rs/system.rs"
+    },
+    {
+      "source": "kepler.py:1308",
+      "method": "System.set_data",
+      "status": "implemented",
+      "equivalent": "new Python inference inputs"
+    },
+    {
+      "source": "kepler.py:1333",
+      "method": "System.solve",
+      "status": "implemented",
+      "equivalent": "linear Gaussian map solves at fixed design; source does not supply a joint bilinear primary/reflected posterior"
+    },
+    {
+      "source": "kepler.py:1468",
+      "method": "System.draw",
+      "status": "implemented",
+      "equivalent": "posterior Gaussian draws"
+    },
+    {
+      "source": "kepler.py:1494",
+      "method": "System.lnlike",
+      "status": "implemented",
+      "equivalent": "inference.rs marginal likelihood"
+    }
+  ],
+  "properties": [
+    {
+      "source": "maps.py:94",
+      "property": "MapBase.angle_unit",
+      "counterpart": "explicit units in NUMERICAL_API.md; angle_unit selects rad/deg, other unit conversion is caller-side"
+    },
+    {
+      "source": "maps.py:105",
+      "property": "MapBase.wav_unit",
+      "counterpart": "explicit units in NUMERICAL_API.md; angle_unit selects rad/deg, other unit conversion is caller-side"
+    },
+    {
+      "source": "maps.py:116",
+      "property": "MapBase.ydeg",
+      "counterpart": "Map.ydeg in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:121",
+      "property": "MapBase.Ny",
+      "counterpart": "Map.Ny"
+    },
+    {
+      "source": "maps.py:129",
+      "property": "MapBase.udeg",
+      "counterpart": "Map.udeg in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:134",
+      "property": "MapBase.Nu",
+      "counterpart": "udeg+1"
+    },
+    {
+      "source": "maps.py:142",
+      "property": "MapBase.fdeg",
+      "counterpart": "Map.fdeg in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:147",
+      "property": "MapBase.Nf",
+      "counterpart": "(fdeg+1)**2"
+    },
+    {
+      "source": "maps.py:155",
+      "property": "MapBase.deg",
+      "counterpart": "ydeg+udeg+fdeg"
+    },
+    {
+      "source": "maps.py:163",
+      "property": "MapBase.N",
+      "counterpart": "(ydeg+udeg+fdeg+1)**2"
+    },
+    {
+      "source": "maps.py:171",
+      "property": "MapBase.nw",
+      "counterpart": "Map.nw in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:176",
+      "property": "MapBase.y",
+      "counterpart": "Map.y in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:187",
+      "property": "MapBase.u",
+      "counterpart": "Map.u in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:198",
+      "property": "MapBase.wav",
+      "counterpart": "Map.wav in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:935",
+      "property": "MapBase.solution",
+      "counterpart": "solve() return (mean, lower Cholesky); stored solution state"
+    },
+    {
+      "source": "maps.py:1043",
+      "property": "YlmBase.inc",
+      "counterpart": "Map.inc in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:1052",
+      "property": "YlmBase.obl",
+      "counterpart": "Map.obl in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:2015",
+      "property": "RVBase.velocity_unit",
+      "counterpart": "explicit units in NUMERICAL_API.md; angle_unit selects rad/deg, other unit conversion is caller-side"
+    },
+    {
+      "source": "maps.py:2026",
+      "property": "RVBase.alpha",
+      "counterpart": "Map.alpha in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:2046",
+      "property": "RVBase.veq",
+      "counterpart": "Map.veq in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:2242",
+      "property": "ReflectedBase.source_npts",
+      "counterpart": "Map.source_npts in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:2251",
+      "property": "ReflectedBase.roughness",
+      "counterpart": "Map.roughness in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:2846",
+      "property": "OblateBase.f",
+      "counterpart": "Map.f in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:2861",
+      "property": "OblateBase.omega",
+      "counterpart": "Map.omega in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:2874",
+      "property": "OblateBase.fproj",
+      "counterpart": "1-sqrt(cos(inc)**2+(1-f)**2*sin(inc)**2)"
+    },
+    {
+      "source": "maps.py:2881",
+      "property": "OblateBase.tpole",
+      "counterpart": "Map.tpole in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:2891",
+      "property": "OblateBase.beta",
+      "counterpart": "Map.beta in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "maps.py:2901",
+      "property": "OblateBase.wav",
+      "counterpart": "Map.wav in python/_starry_api.py; native synchronized parameters"
+    },
+    {
+      "source": "doppler.py:378",
+      "property": "DopplerMap.lazy",
+      "counterpart": "excluded symbolic execution mode; eager native numerical API"
+    },
+    {
+      "source": "doppler.py:383",
+      "property": "DopplerMap.nc",
+      "counterpart": "len(maps)"
+    },
+    {
+      "source": "doppler.py:388",
+      "property": "DopplerMap.nt",
+      "counterpart": "len(theta) per call; epochs are not constructor state"
+    },
+    {
+      "source": "doppler.py:393",
+      "property": "DopplerMap.nw",
+      "counterpart": "len(wav) or native output length"
+    },
+    {
+      "source": "doppler.py:401",
+      "property": "DopplerMap.nw0",
+      "counterpart": "input rest wavelength length; inputs resampled by from_wavelengths"
+    },
+    {
+      "source": "doppler.py:409",
+      "property": "DopplerMap.nw_",
+      "counterpart": "len(wav_internal)"
+    },
+    {
+      "source": "doppler.py:417",
+      "property": "DopplerMap.nw0_",
+      "counterpart": "spectra.shape[1]"
+    },
+    {
+      "source": "doppler.py:425",
+      "property": "DopplerMap.oversample",
+      "counterpart": "from_wavelengths(oversample=)"
+    },
+    {
+      "source": "doppler.py:430",
+      "property": "DopplerMap.ydeg",
+      "counterpart": "maps[0].ydeg"
+    },
+    {
+      "source": "doppler.py:435",
+      "property": "DopplerMap.Ny",
+      "counterpart": "maps[0].Ny"
+    },
+    {
+      "source": "doppler.py:443",
+      "property": "DopplerMap.udeg",
+      "counterpart": "len(u)"
+    },
+    {
+      "source": "doppler.py:448",
+      "property": "DopplerMap.Nu",
+      "counterpart": "len(u)+1"
+    },
+    {
+      "source": "doppler.py:457",
+      "property": "DopplerMap.deg",
+      "counterpart": "maps[0].ydeg+len(u)"
+    },
+    {
+      "source": "doppler.py:465",
+      "property": "DopplerMap.N",
+      "counterpart": "(maps[0].ydeg+len(u)+1)**2"
+    },
+    {
+      "source": "doppler.py:473",
+      "property": "DopplerMap.angle_unit",
+      "counterpart": "explicit units in NUMERICAL_API.md; angle_unit selects rad/deg, other unit conversion is caller-side"
+    },
+    {
+      "source": "doppler.py:485",
+      "property": "DopplerMap.velocity_unit",
+      "counterpart": "explicit units in NUMERICAL_API.md; angle_unit selects rad/deg, other unit conversion is caller-side"
+    },
+    {
+      "source": "doppler.py:496",
+      "property": "DopplerMap.inc",
+      "counterpart": "DopplerMap.inc or component Map.inc"
+    },
+    {
+      "source": "doppler.py:509",
+      "property": "DopplerMap.obl",
+      "counterpart": "source fixed zero; kernel uses Doppler inclination and phase"
+    },
+    {
+      "source": "doppler.py:521",
+      "property": "DopplerMap.veq",
+      "counterpart": "DopplerMap.veq"
+    },
+    {
+      "source": "doppler.py:533",
+      "property": "DopplerMap.vsini",
+      "counterpart": "veq*sin(inc); native kernel applies source 1 m/s floor"
+    },
+    {
+      "source": "doppler.py:542",
+      "property": "DopplerMap.wav",
+      "counterpart": "DopplerMap.wav"
+    },
+    {
+      "source": "doppler.py:553",
+      "property": "DopplerMap.wav_",
+      "counterpart": "DopplerMap.wav_internal"
+    },
+    {
+      "source": "doppler.py:561",
+      "property": "DopplerMap.wav0",
+      "counterpart": "caller input rest_wavelengths; wav0 locally denotes padded grid"
+    },
+    {
+      "source": "doppler.py:572",
+      "property": "DopplerMap.wav0_",
+      "counterpart": "DopplerMap.wav0 padded rest grid"
+    },
+    {
+      "source": "doppler.py:583",
+      "property": "DopplerMap.spectrum",
+      "counterpart": "caller input resampled by constructor/load"
+    },
+    {
+      "source": "doppler.py:640",
+      "property": "DopplerMap.spectrum_",
+      "counterpart": "DopplerMap.spectra"
+    },
+    {
+      "source": "doppler.py:650",
+      "property": "DopplerMap.wavc",
+      "counterpart": "wav[continuum_index] for sampled normalization"
+    },
+    {
+      "source": "doppler.py:663",
+      "property": "DopplerMap.y",
+      "counterpart": "absolute component weights maps[i].amp*maps[i].y"
+    },
+    {
+      "source": "doppler.py:668",
+      "property": "DopplerMap.u",
+      "counterpart": "DopplerMap.u (without fixed monopole)"
+    },
+    {
+      "source": "doppler.py:679",
+      "property": "DopplerMap.spectral_map",
+      "counterpart": "sum of outer products of component weights and spectra; spectral_map_dot operator"
+    },
+    {
+      "source": "kepler.py:59",
+      "property": "Body.length_unit",
+      "counterpart": "explicit units in NUMERICAL_API.md; angle_unit selects rad/deg, other unit conversion is caller-side"
+    },
+    {
+      "source": "kepler.py:70",
+      "property": "Body.mass_unit",
+      "counterpart": "explicit units in NUMERICAL_API.md; angle_unit selects rad/deg, other unit conversion is caller-side"
+    },
+    {
+      "source": "kepler.py:81",
+      "property": "Body.time_unit",
+      "counterpart": "explicit units in NUMERICAL_API.md; angle_unit selects rad/deg, other unit conversion is caller-side"
+    },
+    {
+      "source": "kepler.py:92",
+      "property": "Body.angle_unit",
+      "counterpart": "explicit units in NUMERICAL_API.md; angle_unit selects rad/deg, other unit conversion is caller-side"
+    },
+    {
+      "source": "kepler.py:119",
+      "property": "Body.map",
+      "counterpart": "Primary/Secondary/System.map explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:134",
+      "property": "Body.r",
+      "counterpart": "Primary/Secondary/System.r explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:143",
+      "property": "Body.m",
+      "counterpart": "Primary/Secondary/System.m explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:152",
+      "property": "Body.prot",
+      "counterpart": "Primary/Secondary/System.prot explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:161",
+      "property": "Body.t0",
+      "counterpart": "Primary/Secondary/System.t0 explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:170",
+      "property": "Body.theta0",
+      "counterpart": "Primary/Secondary/System.theta0 explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:312",
+      "property": "Secondary.porb",
+      "counterpart": "Secondary.porb when supplied; otherwise derived from a and masses during native synchronization"
+    },
+    {
+      "source": "kepler.py:329",
+      "property": "Secondary.a",
+      "counterpart": "Secondary.a when supplied; otherwise derived from porb and masses during native synchronization"
+    },
+    {
+      "source": "kepler.py:346",
+      "property": "Secondary.ecc",
+      "counterpart": "Primary/Secondary/System.ecc explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:355",
+      "property": "Secondary.w",
+      "counterpart": "Primary/Secondary/System.w explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:364",
+      "property": "Secondary.omega",
+      "counterpart": "Secondary.w alias in source; use w in new API"
+    },
+    {
+      "source": "kepler.py:373",
+      "property": "Secondary.Omega",
+      "counterpart": "Primary/Secondary/System.Omega explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:382",
+      "property": "Secondary.inc",
+      "counterpart": "Primary/Secondary/System.inc explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:527",
+      "property": "System.light_delay",
+      "counterpart": "Primary/Secondary/System.light_delay explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:532",
+      "property": "System.texp",
+      "counterpart": "Primary/Secondary/System.texp explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:536",
+      "property": "System.oversample",
+      "counterpart": "Primary/Secondary/System.oversample explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:541",
+      "property": "System.order",
+      "counterpart": "Primary/Secondary/System.order explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:551",
+      "property": "System.time_unit",
+      "counterpart": "explicit units in NUMERICAL_API.md; angle_unit selects rad/deg, other unit conversion is caller-side"
+    },
+    {
+      "source": "kepler.py:562",
+      "property": "System.primary",
+      "counterpart": "Primary/Secondary/System.primary explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:567",
+      "property": "System.secondaries",
+      "counterpart": "Primary/Secondary/System.secondaries explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:572",
+      "property": "System.bodies",
+      "counterpart": "Primary/Secondary/System.bodies explicit state in python/_starry_api.py"
+    },
+    {
+      "source": "kepler.py:577",
+      "property": "System.map_indices",
+      "counterpart": "coefficient block offsets from each body.map.Ny (and spectral channels)"
+    },
+    {
+      "source": "kepler.py:1448",
+      "property": "System.solution",
+      "counterpart": "System.solve() return (mean, lower Cholesky); stored solution state"
+    }
+  ],
+  "internal_operators": [
+    {
+      "source": "_core/core.py:133",
+      "operator": "OpsYlm.rT",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/basis.rs::a1,a2_inverse,disk_moments; src/matrix.rs::solve",
+      "evidence": [
+        "validation/compare.py"
+      ],
+      "reference": "upstream C++ basis/Green transforms"
+    },
+    {
+      "source": "_core/core.py:137",
+      "operator": "OpsYlm.rTA1",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/basis.rs::a1,a2_inverse,disk_moments; src/matrix.rs::solve",
+      "evidence": [
+        "validation/compare.py"
+      ],
+      "reference": "upstream C++ basis/Green transforms"
+    },
+    {
+      "source": "_core/core.py:141",
+      "operator": "OpsYlm.A",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/basis.rs::a1,a2_inverse,disk_moments; src/matrix.rs::solve",
+      "evidence": [
+        "validation/compare.py"
+      ],
+      "reference": "upstream C++ basis/Green transforms"
+    },
+    {
+      "source": "_core/core.py:145",
+      "operator": "OpsYlm.A1",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/basis.rs::a1,a2_inverse,disk_moments; src/matrix.rs::solve",
+      "evidence": [
+        "validation/compare.py"
+      ],
+      "reference": "upstream C++ basis/Green transforms"
+    },
+    {
+      "source": "_core/core.py:149",
+      "operator": "OpsYlm.A1Inv",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/basis.rs::a1,a2_inverse,disk_moments; src/matrix.rs::solve",
+      "evidence": [
+        "validation/compare.py"
+      ],
+      "reference": "upstream C++ basis/Green transforms"
+    },
+    {
+      "source": "_core/core.py:153",
+      "operator": "OpsYlm.sT",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/map.rs::flux,flux_design; src/solver.rs::polynomial_flux; src/rings.rs::flux_design",
+      "evidence": [
+        "validation/compare.py",
+        "validation/compare_rings.py",
+        "validation/decimal_rings.py"
+      ],
+      "reference": "upstream and high-precision reference"
+    },
+    {
+      "source": "_core/core.py:157",
+      "operator": "OpsYlm.tensordotRz",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/rotation.rs::axis_angle,coefficients; src/map.rs::projected",
+      "evidence": [
+        "validation/compare.py",
+        "python/test_interface.py",
+        "tests/harmonics.rs"
+      ],
+      "reference": "upstream rotations plus harmonic identities"
+    },
+    {
+      "source": "_core/core.py:164",
+      "operator": "OpsYlm.dotR",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/rotation.rs::axis_angle,coefficients; src/map.rs::projected",
+      "evidence": [
+        "validation/compare.py",
+        "python/test_interface.py",
+        "tests/harmonics.rs"
+      ],
+      "reference": "upstream rotations plus harmonic identities"
+    },
+    {
+      "source": "_core/core.py:171",
+      "operator": "OpsYlm.F",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/map.rs::limb_filtered,multiplied",
+      "evidence": [
+        "tests/high_degree_filters.rs",
+        "python/test_extended.py"
+      ],
+      "reference": "filter algebra and upstream forward comparisons"
+    },
+    {
+      "source": "_core/core.py:175",
+      "operator": "OpsYlm.spotYlm",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/surface.rs::add_spot,axisymmetric_fit",
+      "evidence": [
+        "python/test_pixels_spectral.py",
+        "tests/pixels.rs"
+      ],
+      "reference": "native harmonic/profile tests"
+    },
+    {
+      "source": "_core/core.py:180",
+      "operator": "OpsYlm.pT",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/basis.rs::polynomial,harmonics; src/map.rs::intensity",
+      "evidence": [
+        "validation/compare.py",
+        "python/test_interface.py"
+      ],
+      "reference": "upstream basis and intensity"
+    },
+    {
+      "source": "_core/core.py:184",
+      "operator": "OpsYlm.limbdark_is_physical",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/surface.rs::limb_is_physical,minimize",
+      "evidence": [
+        "python/test_pixels_spectral.py",
+        "validation/upstream_python.py"
+      ],
+      "reference": "upstream physicality/minimum tests"
+    },
+    {
+      "source": "_core/core.py:189",
+      "operator": "OpsYlm.get_minimum",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/surface.rs::limb_is_physical,minimize",
+      "evidence": [
+        "python/test_pixels_spectral.py",
+        "validation/upstream_python.py"
+      ],
+      "reference": "upstream physicality/minimum tests"
+    },
+    {
+      "source": "_core/core.py:194",
+      "operator": "OpsYlm.X",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/map.rs::flux,flux_design; src/solver.rs::polynomial_flux; src/rings.rs::flux_design",
+      "evidence": [
+        "validation/compare.py",
+        "validation/compare_rings.py",
+        "validation/decimal_rings.py"
+      ],
+      "reference": "upstream and high-precision reference"
+    },
+    {
+      "source": "_core/core.py:238",
+      "operator": "OpsYlm.flux",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/map.rs::flux,flux_design; src/solver.rs::polynomial_flux; src/rings.rs::flux_design",
+      "evidence": [
+        "validation/compare.py",
+        "validation/compare_rings.py",
+        "validation/decimal_rings.py"
+      ],
+      "reference": "upstream and high-precision reference"
+    },
+    {
+      "source": "_core/core.py:243",
+      "operator": "OpsYlm.P",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/basis.rs::polynomial,harmonics; src/map.rs::intensity",
+      "evidence": [
+        "validation/compare.py",
+        "python/test_interface.py"
+      ],
+      "reference": "upstream basis and intensity"
+    },
+    {
+      "source": "_core/core.py:269",
+      "operator": "OpsYlm.intensity",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/basis.rs::polynomial,harmonics; src/map.rs::intensity",
+      "evidence": [
+        "validation/compare.py",
+        "python/test_interface.py"
+      ],
+      "reference": "upstream basis and intensity"
+    },
+    {
+      "source": "_core/core.py:292",
+      "operator": "OpsYlm.render",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/imaging.rs::render,coordinate_grid",
+      "evidence": [
+        "python/test_imaging_system.py",
+        "python/test_exposure.py"
+      ],
+      "reference": "render/intensity and coordinate consistency"
+    },
+    {
+      "source": "_core/core.py:349",
+      "operator": "OpsYlm.expand_spot",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/surface.rs::add_spot,axisymmetric_fit",
+      "evidence": [
+        "python/test_pixels_spectral.py",
+        "tests/pixels.rs"
+      ],
+      "reference": "native harmonic/profile tests"
+    },
+    {
+      "source": "_core/core.py:354",
+      "operator": "OpsYlm.compute_ortho_grid",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/imaging.rs::render,coordinate_grid",
+      "evidence": [
+        "python/test_imaging_system.py",
+        "python/test_exposure.py"
+      ],
+      "reference": "render/intensity and coordinate consistency"
+    },
+    {
+      "source": "_core/core.py:374",
+      "operator": "OpsYlm.compute_ortho_grid_inc_obl",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/imaging.rs::render,coordinate_grid",
+      "evidence": [
+        "python/test_imaging_system.py",
+        "python/test_exposure.py"
+      ],
+      "reference": "render/intensity and coordinate consistency"
+    },
+    {
+      "source": "_core/core.py:400",
+      "operator": "OpsYlm.compute_rect_grid",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/imaging.rs::render,coordinate_grid",
+      "evidence": [
+        "python/test_imaging_system.py",
+        "python/test_exposure.py"
+      ],
+      "reference": "render/intensity and coordinate consistency"
+    },
+    {
+      "source": "_core/core.py:422",
+      "operator": "OpsYlm.compute_moll_grid",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/imaging.rs::render,coordinate_grid",
+      "evidence": [
+        "python/test_imaging_system.py",
+        "python/test_exposure.py"
+      ],
+      "reference": "render/intensity and coordinate consistency"
+    },
+    {
+      "source": "_core/core.py:458",
+      "operator": "OpsYlm.right_project",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/rotation.rs::axis_angle,coefficients; src/map.rs::projected",
+      "evidence": [
+        "validation/compare.py",
+        "python/test_interface.py",
+        "tests/harmonics.rs"
+      ],
+      "reference": "upstream rotations plus harmonic identities"
+    },
+    {
+      "source": "_core/core.py:513",
+      "operator": "OpsYlm.left_project",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/rotation.rs::axis_angle,coefficients; src/map.rs::projected",
+      "evidence": [
+        "validation/compare.py",
+        "python/test_interface.py",
+        "tests/harmonics.rs"
+      ],
+      "reference": "upstream rotations plus harmonic identities"
+    },
+    {
+      "source": "_core/core.py:571",
+      "operator": "OpsYlm.set_vector",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "python/_starry_api.py::Map.__setitem__",
+      "evidence": [
+        "python/test_interface.py",
+        "validation/upstream_python.py"
+      ],
+      "reference": "new state API; upstream indexing tests"
+    },
+    {
+      "source": "_core/core.py:578",
+      "operator": "OpsYlm.set_matrix",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "python/_starry_api.py::Map.__setitem__",
+      "evidence": [
+        "python/test_interface.py",
+        "validation/upstream_python.py"
+      ],
+      "reference": "new state API; upstream indexing tests"
+    },
+    {
+      "source": "_core/core.py:598",
+      "operator": "OpsYlm.latlon_to_xyz",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/basis.rs::polynomial,harmonics; src/map.rs::intensity",
+      "evidence": [
+        "validation/compare.py",
+        "python/test_interface.py"
+      ],
+      "reference": "upstream basis and intensity"
+    },
+    {
+      "source": "_core/core.py:611",
+      "operator": "OpsYlm.RAxisAngle",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/rotation.rs::axis_angle,coefficients; src/map.rs::projected",
+      "evidence": [
+        "validation/compare.py",
+        "python/test_interface.py",
+        "tests/harmonics.rs"
+      ],
+      "reference": "upstream rotations plus harmonic identities"
+    },
+    {
+      "source": "_core/core.py:695",
+      "operator": "OpsYlm.spot",
+      "status": "numerical_counterpart",
+      "equivalent": "basis/map/rotation/surface/pixels/imaging native modules",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/surface.rs::add_spot,axisymmetric_fit",
+      "evidence": [
+        "python/test_pixels_spectral.py",
+        "tests/pixels.rs"
+      ],
+      "reference": "native harmonic/profile tests"
+    },
+    {
+      "source": "_core/core.py:733",
+      "operator": "OpsLD.limbdark_is_physical",
+      "status": "numerical_counterpart",
+      "equivalent": "map limb filters and emitted integration",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/surface.rs::limb_is_physical",
+      "evidence": [
+        "validation/upstream_python.py"
+      ],
+      "reference": "upstream limb physicality"
+    },
+    {
+      "source": "_core/core.py:738",
+      "operator": "OpsLD.intensity",
+      "status": "numerical_counterpart",
+      "equivalent": "map limb filters and emitted integration",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/map.rs::limb_intensity,limb_flux; python/_starry_api.py::Map.design_matrix",
+      "evidence": [
+        "validation/upstream_python.py",
+        "tests/core.rs"
+      ],
+      "reference": "upstream limb/intensity tests"
+    },
+    {
+      "source": "_core/core.py:750",
+      "operator": "OpsLD.flux",
+      "status": "numerical_counterpart",
+      "equivalent": "map limb filters and emitted integration",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/map.rs::limb_intensity,limb_flux; python/_starry_api.py::Map.design_matrix",
+      "evidence": [
+        "validation/upstream_python.py",
+        "tests/core.rs"
+      ],
+      "reference": "upstream limb/intensity tests"
+    },
+    {
+      "source": "_core/core.py:776",
+      "operator": "OpsLD.X",
+      "status": "numerical_counterpart",
+      "equivalent": "map limb filters and emitted integration",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/map.rs::limb_intensity,limb_flux; python/_starry_api.py::Map.design_matrix",
+      "evidence": [
+        "validation/upstream_python.py",
+        "tests/core.rs"
+      ],
+      "reference": "upstream limb/intensity tests"
+    },
+    {
+      "source": "_core/core.py:789",
+      "operator": "OpsLD.render",
+      "status": "numerical_counterpart",
+      "equivalent": "map limb filters and emitted integration",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/imaging.rs::render",
+      "evidence": [
+        "python/test_imaging_system.py",
+        "validation/upstream_python.py"
+      ],
+      "reference": "native images and upstream limb tests"
+    },
+    {
+      "source": "_core/core.py:796",
+      "operator": "OpsLD.render_ld",
+      "status": "numerical_counterpart",
+      "equivalent": "map limb filters and emitted integration",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/imaging.rs::render",
+      "evidence": [
+        "python/test_imaging_system.py",
+        "validation/upstream_python.py"
+      ],
+      "reference": "native images and upstream limb tests"
+    },
+    {
+      "source": "_core/core.py:818",
+      "operator": "OpsLD.set_vector",
+      "status": "numerical_counterpart",
+      "equivalent": "map limb filters and emitted integration",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "python/_starry_api.py::Map.__setitem__",
+      "evidence": [
+        "validation/upstream_python.py"
+      ],
+      "reference": "state indexing"
+    },
+    {
+      "source": "_core/core.py:828",
+      "operator": "OpsRV.compute_rv_filter",
+      "status": "numerical_counterpart",
+      "equivalent": "rv native filters and velocity ratios",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/rv.rs::velocity_polynomial; src/rv_derivatives.rs::filters",
+      "evidence": [
+        "validation/compare_rv_derivatives.py"
+      ],
+      "reference": "unmodified upstream method and complex-step derivatives"
+    },
+    {
+      "source": "_core/core.py:890",
+      "operator": "OpsRV.rv",
+      "status": "numerical_counterpart",
+      "equivalent": "rv native filters and velocity ratios",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/rv.rs::radial_velocity; src/rv_derivatives.rs::jacobian",
+      "evidence": [
+        "validation/independent_velocity.py",
+        "python/test_rv_derivatives.py"
+      ],
+      "reference": "independent physical disk integration and perturbations"
+    },
+    {
+      "source": "_core/core.py:944",
+      "operator": "OpsReflected.A1Big",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/basis.rs::a1",
+      "evidence": [
+        "validation/compare.py"
+      ],
+      "reference": "shared upstream basis transform"
+    },
+    {
+      "source": "_core/core.py:948",
+      "operator": "OpsReflected.rT",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/reflected.rs::flux,flux_extended,flux_extended_ellipses",
+      "evidence": [
+        "validation/compare_reflected.py",
+        "validation/compare_specialized_gradients.py",
+        "validation/compare_specialized_high.py"
+      ],
+      "reference": "upstream C++ values and AD"
+    },
+    {
+      "source": "_core/core.py:952",
+      "operator": "OpsReflected.sT",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/reflected.rs::flux,flux_extended,flux_extended_ellipses",
+      "evidence": [
+        "validation/compare_reflected.py",
+        "validation/compare_specialized_gradients.py",
+        "validation/compare_specialized_high.py"
+      ],
+      "reference": "upstream C++ values and AD"
+    },
+    {
+      "source": "_core/core.py:956",
+      "operator": "OpsReflected.intensity",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/reflected.rs::intensity,source_points,illumination_polynomial; src/imaging.rs::intensity",
+      "evidence": [
+        "validation/upstream_python.py",
+        "python/test_illumination_derivatives.py"
+      ],
+      "reference": "upstream Oren-Nayar and normalization; finite-source chain checks"
+    },
+    {
+      "source": "_core/core.py:1028",
+      "operator": "OpsReflected.unweighted_intensity",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/reflected.rs::intensity,source_points,illumination_polynomial; src/imaging.rs::intensity",
+      "evidence": [
+        "validation/upstream_python.py",
+        "python/test_illumination_derivatives.py"
+      ],
+      "reference": "upstream Oren-Nayar and normalization; finite-source chain checks"
+    },
+    {
+      "source": "_core/core.py:1063",
+      "operator": "OpsReflected.X_point_source",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/reflected.rs::flux,flux_extended,flux_extended_ellipses",
+      "evidence": [
+        "validation/compare_reflected.py",
+        "validation/compare_specialized_gradients.py",
+        "validation/compare_specialized_high.py"
+      ],
+      "reference": "upstream C++ values and AD"
+    },
+    {
+      "source": "_core/core.py:1122",
+      "operator": "OpsReflected.X",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/reflected.rs::flux,flux_extended,flux_extended_ellipses",
+      "evidence": [
+        "validation/compare_reflected.py",
+        "validation/compare_specialized_gradients.py",
+        "validation/compare_specialized_high.py"
+      ],
+      "reference": "upstream C++ values and AD"
+    },
+    {
+      "source": "_core/core.py:1189",
+      "operator": "OpsReflected.flux",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/reflected.rs::flux,flux_extended,flux_extended_ellipses",
+      "evidence": [
+        "validation/compare_reflected.py",
+        "validation/compare_specialized_gradients.py",
+        "validation/compare_specialized_high.py"
+      ],
+      "reference": "upstream C++ values and AD"
+    },
+    {
+      "source": "_core/core.py:1201",
+      "operator": "OpsReflected.flux_point_source",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/reflected.rs::flux,flux_extended,flux_extended_ellipses",
+      "evidence": [
+        "validation/compare_reflected.py",
+        "validation/compare_specialized_gradients.py",
+        "validation/compare_specialized_high.py"
+      ],
+      "reference": "upstream C++ values and AD"
+    },
+    {
+      "source": "_core/core.py:1213",
+      "operator": "OpsReflected.render",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/imaging.rs::render",
+      "evidence": [
+        "python/test_imaging_system.py"
+      ],
+      "reference": "reflected render/intensity consistency"
+    },
+    {
+      "source": "_core/core.py:1306",
+      "operator": "OpsReflected.compute_illumination_point_source",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/reflected.rs::intensity,source_points,illumination_polynomial; src/imaging.rs::intensity",
+      "evidence": [
+        "validation/upstream_python.py",
+        "python/test_illumination_derivatives.py"
+      ],
+      "reference": "upstream Oren-Nayar and normalization; finite-source chain checks"
+    },
+    {
+      "source": "_core/core.py:1372",
+      "operator": "OpsReflected.compute_illumination",
+      "status": "numerical_counterpart",
+      "equivalent": "reflected polynomial scattering and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/reflected.rs::intensity,source_points,illumination_polynomial; src/imaging.rs::intensity",
+      "evidence": [
+        "validation/upstream_python.py",
+        "python/test_illumination_derivatives.py"
+      ],
+      "reference": "upstream Oren-Nayar and normalization; finite-source chain checks"
+    },
+    {
+      "source": "_core/core.py:1494",
+      "operator": "OpsOblate.tensordotRz",
+      "status": "numerical_counterpart",
+      "equivalent": "oblate gravity filters, conic geometry and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/rotation.rs::coefficients",
+      "evidence": [
+        "validation/compare.py"
+      ],
+      "reference": "shared upstream rotation evidence"
+    },
+    {
+      "source": "_core/core.py:1501",
+      "operator": "OpsOblate.dotR",
+      "status": "numerical_counterpart",
+      "equivalent": "oblate gravity filters, conic geometry and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/rotation.rs::coefficients",
+      "evidence": [
+        "validation/compare.py"
+      ],
+      "reference": "shared upstream rotation evidence"
+    },
+    {
+      "source": "_core/core.py:1508",
+      "operator": "OpsOblate.render",
+      "status": "numerical_counterpart",
+      "equivalent": "oblate gravity filters, conic geometry and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/imaging.rs::render,coordinate_grid",
+      "evidence": [
+        "python/test_imaging_system.py",
+        "python/test_exposure.py"
+      ],
+      "reference": "oblate render and projected grids"
+    },
+    {
+      "source": "_core/core.py:1598",
+      "operator": "OpsOblate.compute_ortho_grid_fproj",
+      "status": "numerical_counterpart",
+      "equivalent": "oblate gravity filters, conic geometry and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/imaging.rs::render,coordinate_grid",
+      "evidence": [
+        "python/test_imaging_system.py",
+        "python/test_exposure.py"
+      ],
+      "reference": "oblate render and projected grids"
+    },
+    {
+      "source": "_core/core.py:1615",
+      "operator": "OpsOblate.sT",
+      "status": "numerical_counterpart",
+      "equivalent": "oblate gravity filters, conic geometry and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/oblate.rs::flux,observed_map; src/oblate_derivatives.rs::flux_ellipses",
+      "evidence": [
+        "validation/compare_oblate.py",
+        "validation/compare_oblate_derivatives.py",
+        "python/test_system_surface.py"
+      ],
+      "reference": "upstream C++/AD and overlapping-silhouette derivatives"
+    },
+    {
+      "source": "_core/core.py:1619",
+      "operator": "OpsOblate.X",
+      "status": "numerical_counterpart",
+      "equivalent": "oblate gravity filters, conic geometry and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/oblate.rs::flux,observed_map; src/oblate_derivatives.rs::flux_ellipses",
+      "evidence": [
+        "validation/compare_oblate.py",
+        "validation/compare_oblate_derivatives.py",
+        "python/test_system_surface.py"
+      ],
+      "reference": "upstream C++/AD and overlapping-silhouette derivatives"
+    },
+    {
+      "source": "_core/core.py:1654",
+      "operator": "OpsOblate.flux",
+      "status": "numerical_counterpart",
+      "equivalent": "oblate gravity filters, conic geometry and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/oblate.rs::flux,observed_map; src/oblate_derivatives.rs::flux_ellipses",
+      "evidence": [
+        "validation/compare_oblate.py",
+        "validation/compare_oblate_derivatives.py",
+        "python/test_system_surface.py"
+      ],
+      "reference": "upstream C++/AD and overlapping-silhouette derivatives"
+    },
+    {
+      "source": "_core/core.py:1677",
+      "operator": "OpsOblate.weight_ylms_by_grav_dark_filter",
+      "status": "numerical_counterpart",
+      "equivalent": "oblate gravity filters, conic geometry and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/oblate.rs::GravityDarkening.profile,filter,observed_map",
+      "evidence": [
+        "tests/oblate_system.rs",
+        "python/test_oblate_derivatives.py",
+        "tests/domain_stress.rs"
+      ],
+      "reference": "gravity profiles, derivatives and upper-degree product tests"
+    },
+    {
+      "source": "_core/core.py:1692",
+      "operator": "OpsOblate.grav_dark",
+      "status": "numerical_counterpart",
+      "equivalent": "oblate gravity filters, conic geometry and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/oblate.rs::GravityDarkening.profile,filter,observed_map",
+      "evidence": [
+        "tests/oblate_system.rs",
+        "python/test_oblate_derivatives.py",
+        "tests/domain_stress.rs"
+      ],
+      "reference": "gravity profiles, derivatives and upper-degree product tests"
+    },
+    {
+      "source": "_core/core.py:1705",
+      "operator": "OpsOblate.compute_grav_dark_filter",
+      "status": "numerical_counterpart",
+      "equivalent": "oblate gravity filters, conic geometry and harmonic surface quadrature",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/oblate.rs::GravityDarkening.profile,filter,observed_map",
+      "evidence": [
+        "tests/oblate_system.rs",
+        "python/test_oblate_derivatives.py",
+        "tests/domain_stress.rs"
+      ],
+      "reference": "gravity profiles, derivatives and upper-degree product tests"
+    },
+    {
+      "source": "_core/core.py:1798",
+      "operator": "OpsDoppler.enforce_shape",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::dimensions,kernel; python/_starry_api.py::DopplerMap",
+      "evidence": [
+        "python/test_inverse.py",
+        "python/test_doppler_derivatives.py"
+      ],
+      "reference": "explicit shape/domain validation; new API rejects invalid inputs"
+    },
+    {
+      "source": "_core/core.py:1804",
+      "operator": "OpsDoppler.enforce_bounds",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::dimensions,kernel; python/_starry_api.py::DopplerMap",
+      "evidence": [
+        "python/test_inverse.py",
+        "python/test_doppler_derivatives.py"
+      ],
+      "reference": "explicit shape/domain validation; new API rejects invalid inputs"
+    },
+    {
+      "source": "_core/core.py:1808",
+      "operator": "OpsDoppler.get_x",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::chord_moments,kernel; src/doppler_derivatives.rs::kernel",
+      "evidence": [
+        "validation/independent_velocity.py",
+        "tests/high_degree_filters.rs"
+      ],
+      "reference": "analytic chord reference and high-degree checks"
+    },
+    {
+      "source": "_core/core.py:1814",
+      "operator": "OpsDoppler.get_rT",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::chord_moments,kernel; src/doppler_derivatives.rs::kernel",
+      "evidence": [
+        "validation/independent_velocity.py",
+        "tests/high_degree_filters.rs"
+      ],
+      "reference": "analytic chord reference and high-degree checks"
+    },
+    {
+      "source": "_core/core.py:1857",
+      "operator": "OpsDoppler.get_kT0",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::chord_moments,kernel; src/doppler_derivatives.rs::kernel",
+      "evidence": [
+        "validation/independent_velocity.py",
+        "tests/high_degree_filters.rs"
+      ],
+      "reference": "analytic chord reference and high-degree checks"
+    },
+    {
+      "source": "_core/core.py:1870",
+      "operator": "OpsDoppler.get_kT0_matrix",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::chord_moments,kernel; src/doppler_derivatives.rs::kernel",
+      "evidence": [
+        "validation/independent_velocity.py",
+        "tests/high_degree_filters.rs"
+      ],
+      "reference": "analytic chord reference and high-degree checks"
+    },
+    {
+      "source": "_core/core.py:1894",
+      "operator": "OpsDoppler.get_kT",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::chord_moments,kernel; src/doppler_derivatives.rs::kernel",
+      "evidence": [
+        "validation/independent_velocity.py",
+        "tests/high_degree_filters.rs"
+      ],
+      "reference": "analytic chord reference and high-degree checks"
+    },
+    {
+      "source": "_core/core.py:1930",
+      "operator": "OpsDoppler.get_D_data",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::map_design,spectrum_design",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py"
+      ],
+      "reference": "design versus convolution and conditional inference"
+    },
+    {
+      "source": "_core/core.py:1947",
+      "operator": "OpsDoppler.get_D",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::map_design,spectrum_design",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py"
+      ],
+      "reference": "design versus convolution and conditional inference"
+    },
+    {
+      "source": "_core/core.py:1986",
+      "operator": "OpsDoppler.get_D_fixed_spectrum",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::map_design,spectrum_design",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py"
+      ],
+      "reference": "design versus convolution and conditional inference"
+    },
+    {
+      "source": "_core/core.py:2013",
+      "operator": "OpsDoppler.get_D_fixed_map",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::map_design,spectrum_design",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py"
+      ],
+      "reference": "design versus convolution and conditional inference"
+    },
+    {
+      "source": "_core/core.py:2033",
+      "operator": "OpsDoppler.dot_design_matrix_fixed_map_into",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::spectral_map_dot; python/_inverse_api.py::DopplerMixin.dot",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py"
+      ],
+      "reference": "forward/transpose adjoint and dense operator checks"
+    },
+    {
+      "source": "_core/core.py:2064",
+      "operator": "OpsDoppler.dot_design_matrix_fixed_map_transpose_into",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::spectral_map_dot; python/_inverse_api.py::DopplerMixin.dot",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py"
+      ],
+      "reference": "forward/transpose adjoint and dense operator checks"
+    },
+    {
+      "source": "_core/core.py:2099",
+      "operator": "OpsDoppler.dot_design_matrix_into",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::spectral_map_dot; python/_inverse_api.py::DopplerMixin.dot",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py"
+      ],
+      "reference": "forward/transpose adjoint and dense operator checks"
+    },
+    {
+      "source": "_core/core.py:2125",
+      "operator": "OpsDoppler.dot_design_matrix_transpose_into",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::spectral_map_dot; python/_inverse_api.py::DopplerMixin.dot",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py"
+      ],
+      "reference": "forward/transpose adjoint and dense operator checks"
+    },
+    {
+      "source": "_core/core.py:2154",
+      "operator": "OpsDoppler.get_flux_from_design",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::spectrum,map_design,spectral_map_dot",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py",
+        "validation/independent_velocity.py"
+      ],
+      "reference": "convolution/design parity and analytic spectrum"
+    },
+    {
+      "source": "_core/core.py:2166",
+      "operator": "OpsDoppler.get_flux_from_conv",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::spectrum,map_design,spectral_map_dot",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py",
+        "validation/independent_velocity.py"
+      ],
+      "reference": "convolution/design parity and analytic spectrum"
+    },
+    {
+      "source": "_core/core.py:2187",
+      "operator": "OpsDoppler.get_flux_from_dotconv",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::spectrum,map_design,spectral_map_dot",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py",
+        "validation/independent_velocity.py"
+      ],
+      "reference": "convolution/design parity and analytic spectrum"
+    },
+    {
+      "source": "_core/core.py:2199",
+      "operator": "OpsDoppler.get_flux_from_convdot",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/doppler.rs::spectrum,map_design,spectral_map_dot",
+      "evidence": [
+        "tests/doppler_inverse.rs",
+        "python/test_inverse.py",
+        "validation/independent_velocity.py"
+      ],
+      "reference": "convolution/design parity and analytic spectrum"
+    },
+    {
+      "source": "_core/core.py:2211",
+      "operator": "OpsDoppler.L1",
+      "status": "numerical_counterpart",
+      "equivalent": "doppler native designs, matrix-free products, convolutions and inference::l1",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/inference.rs::l1",
+      "evidence": [
+        "python/test_l1.py",
+        "python/test_solver_modes.py"
+      ],
+      "reference": "independent matrix solutions of source iteration"
+    },
+    {
+      "source": "_core/core.py:2272",
+      "operator": "OpsSystem.position",
+      "status": "numerical_counterpart",
+      "equivalent": "orbit/system native geometry; System.render composes native per-body images",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/orbit.rs::state,state_derivatives; src/system.rs::states,apparent; src/source_orbits.rs::positions",
+      "evidence": [
+        "tests/orbit_derivatives.rs",
+        "validation/independent_system.py",
+        "validation/compare_source_orbits.py"
+      ],
+      "reference": "independent circular delayed orbit and elliptic perturbations"
+    },
+    {
+      "source": "_core/core.py:2338",
+      "operator": "OpsSystem.X",
+      "status": "numerical_counterpart",
+      "equivalent": "orbit/system native geometry; System.render composes native per-body images",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/system.rs::flux; src/system_derivatives.rs::flux_surface; python/_inverse_api.py::SystemMixin.design_matrix",
+      "evidence": [
+        "validation/independent_system.py",
+        "python/test_system_surface.py",
+        "validation/upstream_python.py"
+      ],
+      "reference": "analytic eclipse derivatives and upstream system inference"
+    },
+    {
+      "source": "_core/core.py:2722",
+      "operator": "OpsSystem.rv",
+      "status": "numerical_counterpart",
+      "equivalent": "orbit/system native geometry; System.render composes native per-body images",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "src/system.rs::radial_velocities; src/system_derivatives.rs::radial_velocity_surface",
+      "evidence": [
+        "validation/independent_system.py",
+        "validation/compare_source_orbits.py",
+        "python/test_source_system.py",
+        "python/test_system_derivatives.py",
+        "python/test_system_surface.py"
+      ],
+      "reference": "independent orbital RV, rotational/exposure quotient checks"
+    },
+    {
+      "source": "_core/core.py:2901",
+      "operator": "OpsSystem.render",
+      "status": "numerical_counterpart",
+      "equivalent": "orbit/system native geometry; System.render composes native per-body images",
+      "derivative_status": "native first derivatives and System surface/RV composition; boundary contract in NUMERICAL_LIMITS.md",
+      "implementation": "python/_inverse_api.py::SystemMixin.render; src/imaging.rs::render",
+      "evidence": [
+        "python/test_system_render.py"
+      ],
+      "reference": "image, phase, radius and position consistency"
+    }
+  ],
+  "cross_cutting": [
+    "degree-domain parity and conditioning",
+    "native parameter derivatives",
+    "independent numerical references",
+    "Python API documentation",
+    "runtime platform validation"
+  ]
+}

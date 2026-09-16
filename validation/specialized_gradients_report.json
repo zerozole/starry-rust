@@ -1,0 +1,8 @@
+{
+  "cases": 63,
+  "max_absolute_error": 1.214306433183765e-15,
+  "illumination_cases": 63,
+  "illumination_max_absolute_error": 6.036837696399289e-16,
+  "passed": true,
+  "reference": "pinned upstream reflected/occultation.h AD; separation, radius, phase geometry and roughness"
+}

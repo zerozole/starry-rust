@@ -1,0 +1,6 @@
+{
+  "cases": 40,
+  "max_absolute_error": 1.055621701162579e-10,
+  "passed": true,
+  "reference": "pinned oblate/occultation.h automatic derivatives; separation, radius, flattening, angle"
+}

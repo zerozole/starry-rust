@@ -1,0 +1,822 @@
+{
+  "files": [
+    "test_intensity.py",
+    "test_rotate_greedy.py",
+    "test_indices_greedy.py",
+    "test_reflected_normalization.py",
+    "test_solve_greedy.py",
+    "test_system_solve_greedy.py",
+    "test_ld.py",
+    "test_oblate_system.py",
+    "test_oren_nayar.py",
+    "test_multi_wavelength_greedy.py",
+    "test_minimize.py::test_sturm",
+    "test_minimize.py::test_limbdark_physical",
+    "test_minimize.py::test_bounded_minimize"
+  ],
+  "exit_code": 0,
+  "elapsed_seconds": 18.88680450001266,
+  "cases": {
+    "tests/greedy/test_intensity.py::test_intensity[y0-0-0-0.3183098861837907]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_intensity.py::test_intensity[y1-0-lon1-0.3183098861837907]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_intensity.py::test_intensity[y2-0-0-0.8696387816055828]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_intensity.py::test_intensity[y3-lat3-0-0.3183098861837907]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_intensity.py::test_intensity[y4-30-lon4-0.5939743338946868]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_intensity.py::test_design_matrix": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_intensity.py::test_limb_darkened": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_rotate_greedy.py::test_rotate": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_rotate_greedy.py::test_rotate_spectral": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_single_to_scalar[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_l_to_scalar[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_m_to_scalar[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_x_to_scalar[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lm_to_scalar[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lx_to_scalar[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_mx_to_scalar[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lmx_to_scalar[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_l_to_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_m_to_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_w_to_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lm_to_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lx_to_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_mx_to_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lmx_to_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ul_single_to_scalar[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ul_multiple_to_scalar[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ul_multiple_to_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_yl_set_constant_coeff[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ul_set_constant_coeff[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ul_constant_coeff[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_set_all[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_set_transposed[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_single_to_scalar[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_l_to_scalar[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_m_to_scalar[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_x_to_scalar[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lm_to_scalar[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lx_to_scalar[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_mx_to_scalar[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lmx_to_scalar[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_l_to_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_m_to_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_w_to_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lm_to_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lx_to_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_mx_to_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ylm_multiple_lmx_to_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ul_single_to_scalar[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ul_multiple_to_scalar[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ul_multiple_to_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_yl_set_constant_coeff[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ul_set_constant_coeff[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_ul_constant_coeff[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_set_all[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_indices_greedy.py::TestGettersAndSetters::test_set_transposed[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_amp": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_flux": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_design_matrix": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_intensity": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_albedo": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_albedo_design_matrix": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_render": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_render_albedo": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_numerical_flux": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_solve": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_one_over_r_squared": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_reflected_normalization.py::test_sys_flux": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[scalar-scalar]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[scalar-vector]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[scalar-matrix]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[scalar-cholesky]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[vector-scalar]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[vector-vector]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[vector-matrix]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[vector-cholesky]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[matrix-scalar]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[matrix-vector]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[matrix-matrix]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[matrix-cholesky]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[cholesky-scalar]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[cholesky-vector]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[cholesky-matrix]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_solve[cholesky-cholesky]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[scalar-scalar-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[scalar-scalar-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[scalar-vector-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[scalar-vector-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[scalar-matrix-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[scalar-matrix-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[scalar-cholesky-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[scalar-cholesky-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[vector-scalar-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[vector-scalar-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[vector-vector-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[vector-vector-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[vector-matrix-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[vector-matrix-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[vector-cholesky-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[vector-cholesky-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[matrix-scalar-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[matrix-scalar-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[matrix-vector-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[matrix-vector-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[matrix-matrix-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[matrix-matrix-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[matrix-cholesky-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[matrix-cholesky-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[cholesky-scalar-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[cholesky-scalar-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[cholesky-vector-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[cholesky-vector-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[cholesky-matrix-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[cholesky-matrix-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[cholesky-cholesky-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_solve_greedy.py::test_lnlike[cholesky-cholesky-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[scalar-scalar]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[scalar-vector]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[scalar-matrix]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[scalar-cholesky]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[vector-scalar]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[vector-vector]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[vector-matrix]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[vector-cholesky]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[matrix-scalar]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[matrix-vector]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[matrix-matrix]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[matrix-cholesky]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[cholesky-scalar]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[cholesky-vector]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[cholesky-matrix]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve[cholesky-cholesky]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[scalar-scalar-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[scalar-scalar-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[scalar-vector-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[scalar-vector-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[scalar-matrix-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[scalar-matrix-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[scalar-cholesky-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[scalar-cholesky-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[vector-scalar-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[vector-scalar-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[vector-vector-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[vector-vector-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[vector-matrix-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[vector-matrix-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[vector-cholesky-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[vector-cholesky-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[matrix-scalar-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[matrix-scalar-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[matrix-vector-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[matrix-vector-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[matrix-matrix-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[matrix-matrix-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[matrix-cholesky-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[matrix-cholesky-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[cholesky-scalar-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[cholesky-scalar-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[cholesky-vector-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[cholesky-vector-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[cholesky-matrix-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[cholesky-matrix-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[cholesky-cholesky-False]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_lnlike[cholesky-cholesky-True]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_system_solve_greedy.py::test_solve_with_zero_degree_primary": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_ld.py::test_quadratic": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_oblate_system.py::test_system[0-None]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_oblate_system.py::test_system[0-10]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_oblate_system.py::test_system[1-None]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_oblate_system.py::test_system[1-10]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_oren_nayar.py::test_terminator_continuity": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_oren_nayar.py::test_half_phase_discontinuity": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_oren_nayar.py::test_approximation": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_flux[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_flux_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_intensity[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_intensity_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_intensity_matrix[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_rv[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_rv_vector[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_render[map0]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_flux[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_flux_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_intensity[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_intensity_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_intensity_matrix[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_rv[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_rv_vector[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_render[map1]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_flux[map2]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_flux_vector[map2]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_intensity[map2]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_intensity_vector[map2]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_intensity_matrix[map2]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_rv[map2]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_rv_vector[map2]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::TestShapes::test_render[map2]": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_multi_wavelength_greedy.py::test_amplitude": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_minimize.py::test_sturm": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_minimize.py::test_limbdark_physical": {
+      "outcome": "passed",
+      "message": null
+    },
+    "tests/greedy/test_minimize.py::test_bounded_minimize": {
+      "outcome": "passed",
+      "message": null
+    }
+  },
+  "passed": true
+}

@@ -1,0 +1,10 @@
+{
+  "cases": 54,
+  "max_absolute_error": 1.094391919101434e-09,
+  "spherical_cases": 18,
+  "spherical_max_absolute_error": 1.0685896612017132e-15,
+  "upstream_zero_flattening_floor_max_difference": 1.154700538292996e-06,
+  "note": "Positive flattening compared with upstream oblate kernel. Exact f=0 compared with upstream emitted sphere; oblate reference floors f to 1e-6 (macros.h STARRY_MIN_F).",
+  "failures": [],
+  "passed": true
+}

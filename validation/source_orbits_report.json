@@ -1,0 +1,6 @@
+{
+  "reference": "exoplanet v0.4.5 unmodified method bodies and independent Newton solver",
+  "sha256": "f5ab60650ffbaffd7e8c61c35effc3954aa6bc5b831c048431d52b4871d1209a",
+  "cases": 90,
+  "max_position_error": 1.7113421790782013e-11
+}

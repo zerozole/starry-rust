@@ -1,0 +1,6 @@
+{
+  "cases": 6,
+  "max_absolute_error": 5.5004889532028756e-12,
+  "passed": true,
+  "reference": "unmodified upstream map/spectrum/tempering method bodies and LinAlgType.solve, NumPy primitives, shared native design inputs"
+}

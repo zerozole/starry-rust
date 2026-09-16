@@ -1,0 +1,61 @@
+{
+  "precision_digits": 50,
+  "cases": [
+    {
+      "degree": 5,
+      "order": -1,
+      "b": 0.3,
+      "r": 0.1,
+      "decimal_reference": "-0.026150806179868169601492236304472302203717366268751",
+      "quadrature_difference": 2e-51,
+      "rust_difference": 2.7755575615628914e-17,
+      "upstream_difference": 3.469446951953614e-18,
+      "passed": true
+    },
+    {
+      "degree": 5,
+      "order": 2,
+      "b": 0.7,
+      "r": 0.4,
+      "decimal_reference": "0.093311846914854711782192811599889472875459707797054",
+      "quadrature_difference": 6.0242851e-43,
+      "rust_difference": 0.0,
+      "upstream_difference": 1.5265566588595902e-16,
+      "passed": true
+    },
+    {
+      "degree": 15,
+      "order": -1,
+      "b": 0.01,
+      "r": 1.0,
+      "decimal_reference": "0.0015781612277656077583682243724677358260689649657434",
+      "quadrature_difference": 1e-51,
+      "rust_difference": 1.5829351718288365e-17,
+      "upstream_difference": 4.7572141137399576e-08,
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "order": 6,
+      "b": 0.5,
+      "r": 0.5,
+      "decimal_reference": "0.014470422447892411706897857699000090699875651967417",
+      "quadrature_difference": 2.4e-50,
+      "rust_difference": 1.5612511283791264e-17,
+      "upstream_difference": 4.1921498257144196e-08,
+      "passed": true
+    },
+    {
+      "degree": 20,
+      "order": 4,
+      "b": 0.01,
+      "r": 1.0,
+      "decimal_reference": "-0.00029487890104843765972171904597730245214736793278889",
+      "quadrature_difference": 1.8e-52,
+      "rust_difference": 1.6750923564901044e-17,
+      "upstream_difference": 3.9462931090768975e-05,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

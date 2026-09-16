@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "starry-rust"
+version = "0.1.0"
+description = "Rust numerical models for stellar and planetary surface maps"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+dependencies = ["numpy>=1.22"]
+
+[tool.setuptools]
+package-dir = {"" = "python"}
+packages = ["_starry_native"]
+py-modules = ["starry_rust", "_starry_api", "_inverse_api", "_orbit_api", "starry_compat"]

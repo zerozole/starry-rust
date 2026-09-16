@@ -1,0 +1,6 @@
+{
+  "cases": 60,
+  "max_absolute_error": 7.275957614183426e-12,
+  "passed": true,
+  "reference": "upstream core.py OpsRV.compute_rv_filter, unmodified method body, complex-step derivatives"
+}

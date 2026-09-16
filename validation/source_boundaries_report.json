@@ -1,0 +1,55 @@
+{
+  "gradient_operators": [
+    {
+      "source": "_core/ops/integration.py:36",
+      "operator": "sTGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/integration.py:96",
+      "operator": "rTReflectedGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/integration.py:169",
+      "operator": "sTReflectedGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/integration.py:238",
+      "operator": "sTOblateGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/rotation.py:34",
+      "operator": "dotRGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/rotation.py:82",
+      "operator": "tensordotRzGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/filter.py:43",
+      "operator": "FGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/polybasis.py:31",
+      "operator": "pTGradientOp",
+      "defines_further_grad": false
+    },
+    {
+      "source": "_core/ops/spot.py:38",
+      "operator": "spotYlmGradientOp",
+      "defines_further_grad": false
+    }
+  ],
+  "limb_derivative_outputs_reject_further_gradients": true,
+  "all_body_rv_flags_must_match": true,
+  "specialized_map_combinations_rejected": true,
+  "oblate_secondaries_rejected": true,
+  "conclusion": "No blanket arbitrary-flux-Hessian requirement; mixed oblate-primary/RV-secondary is excluded by upstream.",
+  "passed": true
+}

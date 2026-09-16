@@ -1,0 +1,35 @@
+{
+  "cases": [
+    {
+      "mode": "reflected",
+      "degree": 13,
+      "error": 2.1149748619109232e-14
+    },
+    {
+      "mode": "reflected",
+      "degree": 13,
+      "error": 8.548717289613705e-15
+    },
+    {
+      "mode": "oblate",
+      "degree": 13,
+      "error": 7.51620987671231e-13
+    },
+    {
+      "mode": "reflected",
+      "degree": 16,
+      "error": 3.259059688787147e-13
+    },
+    {
+      "mode": "reflected",
+      "degree": 16,
+      "error": 5.057065877167588e-14
+    },
+    {
+      "mode": "oblate",
+      "degree": 16,
+      "error": 6.105116412413736e-13
+    }
+  ],
+  "passed": true
+}

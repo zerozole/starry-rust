@@ -1,0 +1,145 @@
+   Compiling starry-rust v0.1.0 (/mnt/d/Games/starry-rust)
+    Finished `release` profile [optimized] target(s) in 43.42s
+     Running unittests src/lib.rs (target-linux/release/deps/starry_rust-682a6f385a33f568)
+
+running 1 test
+test oblate_derivatives::tests::zero_gravity_has_zero_planck_derivative_limit ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running unittests src/bin/probe.rs (target-linux/release/deps/probe-802ddc1dfe5cbb21)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/core.rs (target-linux/release/deps/core-52a6c1619347c2a4)
+
+running 13 tests
+test elliptic_limits ... ok
+test centered_dipole_occultation ... ok
+test invalid_inputs_are_errors ... ok
+test limb_darkening_normalization ... ok
+test intensity_gradients ... ok
+test polynomial_derivatives_at_axes ... ok
+test upstream_rotation_convention ... ok
+test upstream_intensity_cases ... ok
+test low_degree_basis_and_normalization ... ok
+test geometric_gradients_match_flux_differences ... ok
+test rotations_preserve_field_and_power ... ok
+test uniform_occultations_and_contact_limits ... ok
+test analytic_matches_independent_integrator ... ok
+
+test result: ok. 13 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.09s
+
+     Running tests/differentiation.rs (target-linux/release/deps/differentiation-d2c67cc50df199ce)
+
+running 1 test
+test all_emitted_derivatives ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/domain_stress.rs (target-linux/release/deps/domain_stress-dda61041c6115cc0)
+
+running 3 tests
+test degree32_velocity_product_matches_direct_surface ... ok
+test upper_degree_filters_and_extreme_views ... ok
+test degree32_mixed_harmonics_ring_vs_surface ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 2.28s
+
+     Running tests/doppler_inverse.rs (target-linux/release/deps/doppler_inverse-1a6a52c1f3dbccfd)
+
+running 4 tests
+test wavelength_grid_and_spline ... ok
+test unrestricted_spectral_map_and_adjoint ... ok
+test recover_surface_and_rest_spectrum ... ok
+test designs_and_normalized_jacobian ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/exposure.rs (target-linux/release/deps/exposure-904805bed259f9a1)
+
+running 1 test
+test exposure_quadrature_moments ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/extended.rs (target-linux/release/deps/extended-c29e633e64c908d6)
+
+running 9 tests
+test gaussian_inference_closed_form ... ok
+test orbit_equation_velocity_and_mass_conversion ... ok
+test union_occultation_does_not_double_count ... ok
+test lambert_phase_curve_and_inverse_square ... ok
+test projection_and_rv ... ok
+test oblate_flux_normalization_and_gravity_profile ... ok
+test system_transit_eclipse_and_barycenter ... ok
+test reflected_occultation_limits_and_symmetry ... ok
+test spots_images_and_doppler ... ok
+
+test result: ok. 9 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/harmonics.rs (target-linux/release/deps/harmonics-9715c9a316cda2ec)
+
+running 2 tests
+test tangent_derivatives_including_poles ... ok
+test recurrence_and_rotation_projection ... ok
+
+test result: ok. 2 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.01s
+
+     Running tests/high_degree_filters.rs (target-linux/release/deps/high_degree_filters-f1bd1018face19b9)
+
+running 1 test
+test projected_limb_product_and_chord_quadrature ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.28s
+
+     Running tests/oblate_system.rs (target-linux/release/deps/oblate_system-d6441683208ec7fb)
+
+running 3 tests
+test eclipse_uses_elliptical_primary_silhouette ... ok
+test oblate_primary_transit_matches_map ... ok
+test conic_moments_match_circles_and_ellipses ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/orbit_derivatives.rs (target-linux/release/deps/orbit_derivatives-48fac0ff9a915198)
+
+running 1 test
+test orbital_jacobian_hessian_and_time_identities ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/pixels.rs (target-linux/release/deps/pixels-f983cc758973aee9)
+
+running 1 test
+test surface_reconstruction_and_derivatives ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/rings.rs (target-linux/release/deps/rings-22c262117e074152)
+
+running 4 tests
+test degree_twenty_convergence_and_azimuthal_symmetry ... ok
+test harmonic_circle_union ... ok
+test stable_high_degree_geometry_derivative ... ok
+test harmonic_ring_integration_matches_green_solver ... ok
+
+test result: ok. 4 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.26s
+
+     Running tests/specialized_stability.rs (target-linux/release/deps/specialized_stability-554bb408257f55d8)
+
+running 3 tests
+test direct_surface_matches_analytic_overlap_and_phase ... ok
+test degree_32_oblate_spherical_limit_matches_ring_integral ... ok
+test high_degree_specialized_paths_reproduce_low_degree_models ... ok
+
+test result: ok. 3 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 1.57s
+
+   Doc-tests starry_rust
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

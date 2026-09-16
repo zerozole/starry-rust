@@ -1,0 +1,8 @@
+{
+  "doppler_cases": 40,
+  "rv_cases": 24,
+  "doppler_max_absolute_error": 4.729372449219227e-11,
+  "rv_max_absolute_error": 2.6147972675971687e-12,
+  "passed": true,
+  "reference": "analytic dipole chord integrals and independent full-disk physical velocity quadrature; complex-step derivatives"
+}

@@ -1,0 +1,7 @@
+{
+  "cases": 88,
+  "flux_max_absolute_error": 2.708944180085382e-14,
+  "rv_max_absolute_error": 2.9103830456733704e-10,
+  "passed": true,
+  "reference": "independent analytic disk overlap, circular Kepler orbit and retarded barycentric positions; complex-step derivatives"
+}
