@@ -1,11 +1,10 @@
 # starry-rust
 
-A Rust numerical port of [starry](https://github.com/rodluger/starry/tree/b72dff08588532f96bd072f2f1005e227d8e4ed8),
+A Rust numerical port of [starry](https://github.com/rodluger/starry),
 with a new NumPy-based Python interface. The numerical kernels run in Rust;
 Python handles arrays and optimization orchestration. Upstream C++ and Theano
 are not runtime dependencies.
 
-Reference commit: `b72dff08588532f96bd072f2f1005e227d8e4ed8`.
 The supported domain and intentional numerical differences are specified in
 [NUMERICAL_LIMITS.md](NUMERICAL_LIMITS.md). This is a numerical port, not a
 Python/Theano drop-in replacement.
