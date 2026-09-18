@@ -1,7 +1,7 @@
 """Eager Rust-backed compatibility adapter for upstream starry conventions.
 
 Use ``import starry_compat as starry``. This does not emulate symbolic execution.
-See PORT_STATUS.md for supported APIs and measured compatibility coverage.
+See NUMERICAL_LIMITS.md for the supported domain and intentional differences.
 """
 import numpy as np
 import starry_rust as native

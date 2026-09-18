@@ -2,7 +2,8 @@
 
 The implementation lives in Rust. Python supplies array handling, model
 composition and optimization orchestration through a bundled native library.
-No upstream C++ or Theano is used at runtime. See PORT_STATUS.md for boundaries.
+No upstream C++ or Theano is used at runtime. See NUMERICAL_LIMITS.md for the
+supported domain and boundaries.
 
 ## Maps and derivatives
 

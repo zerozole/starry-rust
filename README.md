@@ -10,6 +10,10 @@ The supported domain and intentional numerical differences are specified in
 [NUMERICAL_LIMITS.md](NUMERICAL_LIMITS.md). This is a numerical port, not a
 Python/Theano drop-in replacement.
 
+Upstream starry depends on Theano and a C++ extension that are difficult to
+build against current Python. This port exists to generate spotted-star light
+curve templates without that toolchain, and runs anywhere Rust and NumPy do.
+
 ## Features
 
 - Emitted, reflected, finite-source, oblate and gravity-darkened maps.
@@ -21,7 +25,7 @@ Python/Theano drop-in replacement.
 - Scalar/spectral Gaussian map and System inference with full covariances.
 - Surface rendering, spots, numeric-image loading, harmonic/pixel transforms,
   smoothing, minimization and spectral cube factorization.
-- Harmonic maps and combined products through degree32, with the filter limits
+- Harmonic maps and combined products through degree 32, with the filter limits
   and singular boundaries documented in the numerical contract.
 
 Use `System(..., orbit_convention='starry')` for the original orbital/RV
@@ -31,16 +35,16 @@ normalization; its default is integrated-continuum normalization.
 
 ## Build and use
 
-```powershell
+```bash
 cargo build --release --offline
 python -m unittest discover -s python -v
 python setup.py bdist_wheel
-python -m pip install dist/starry_rust-0.1.0-py3-none-win_amd64.whl
+python -m pip install dist/starry_rust-0.1.0-*.whl
 ```
 
 Source builds require Rust, setuptools and wheel. Installed wheels require
-NumPy. The packaged wheel targets Windows x64; native Rust/Python execution is
-also tested on Ubuntu Linux. macOS is not tested.
+NumPy. Built and tested on Ubuntu Linux and Windows x64; the wheel is named for
+whichever platform builds it. macOS is not tested.
 
 ```python
 from starry_rust import Map
@@ -54,3 +58,34 @@ jacobian = m.flux_jacobian(xo=.2, yo=.4, ro=.1)
 For source-tree use, add `python/` to `PYTHONPATH`; the loader finds the release
 library. `STARRY_RUST_LIBRARY` selects an explicit native library.
 
+## Documentation and verification
+
+- [Numerical API and executable examples](NUMERICAL_API.md)
+- [Numerical limits and source differences](NUMERICAL_LIMITS.md)
+- [Validation evidence and commands](VALIDATION.md)
+
+Release verification passes 47 Rust tests, 77 Python tests and 200 selected
+upstream tests, together with the reference suites and installed-wheel examples
+on Windows and Linux.
+
+`python validation/record_run.py` runs formatting, strict Clippy, Rust/Python
+tests, reference comparisons, source audits and selected original upstream
+tests. Reference compilation needs the separate `../starry-upstream` checkout
+and a C++ compiler; prebuilt local reference executables can be reused.
+
+Upstream's MIT license is retained in [LICENSE](LICENSE). The separately
+vendored exoplanet validation reference retains its own license under
+`validation/`. No source-reference Python is used by the installed runtime.
+
+## Acknowledgements
+
+This is a port of Rodrigo Luger's starry package and its C++/Theano core. The
+spherical harmonic basis, rotation and occultation solvers, reflected and
+oblate map models, Doppler machinery and Keplerian system layer are all ports
+of the original code. Numerical results agree with the original across roughly
+a thousand comparison cases: 2.37e-9 maximum absolute discrepancy on reflected
+flux over 120 cases, 1.10e-9 on oblate flux over 54, 7.28e-12 on RV filters and
+their derivatives over 60, and 2.71e-14 on analytic circular system flux over
+88. [VALIDATION.md](VALIDATION.md) gives the full table, and
+[NUMERICAL_LIMITS.md](NUMERICAL_LIMITS.md) records where this port departs from
+the original on purpose.
